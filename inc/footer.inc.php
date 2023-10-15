@@ -2,7 +2,7 @@
 
 <footer class="flex">
     <div class="whitneyLight">
-        <p>Projet Furina est une base de données Genshin Impact fait en fonction du design de l'excellent site « <a target="_blank" href="https://ambr.top/fr" class="link-footer-a">project Amber</a> ».</p>
+        <p>Projet Furina est une base de données Genshin Impact faite en fonction du design de l'excellent site « <a target="_blank" href="https://ambr.top/fr" class="link-footer-a">project Amber</a> ».</p>
         <p>Ce site n'est pas relié à Hoyoverse et toutes les ressources appartiennent à Hoyoverse. Il s'agit simplement d'un fan-made.</p>
     </div>
     <div class="whitneyBold border-left-footer footer-items">
@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="whitneyBold border-left-footer footer-items">
-        <p>Languages utilisés:</p>
+        <p>Langages utilisés:</p>
         <div>
             <a target="_blank" href="https://www.w3schools.com/html/"><img src="img/icon/html.png" alt="HTML"></a>
             <a target="_blank" href="https://www.w3schools.com/css/"><img src="img/icon/css.png" alt="CSS"></a>
@@ -29,6 +29,10 @@
             <a target="_blank" href="https://www.w3schools.com/php/php_mysql_intro.asp"><img src="img/icon/phpMyAdmin.png" alt="phpMyAdmin"></a>
             <a target="_blank" href="https://www.w3schools.com/git/"><img src="img/icon/git.png" alt="git"></a>
         </div>
+    </div>
+    <div class="whitneyBold border-left-footer footer-items contact-footer">
+        <p>Contact:</p>
+        <a target="_blank" href="https://github.com/Archidoc142"><img src="img/icon/github.png" alt="github_icon"></a>
     </div>
 </footer>
 </body>

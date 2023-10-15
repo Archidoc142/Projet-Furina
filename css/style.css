@@ -1,12 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root{
+    --white: #ECE4D9
 }
 
 @font-face {
     font-family: whitneyBold;
-    src: url(../font/whitneysemibold.otf);
+    src: url(../font/Whitney-Bold.ttf);
 }
 
 @font-face {
@@ -24,8 +22,15 @@
     src: url(../font/Poppins-Light.ttf);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     overflow: auto;
+    background-color: #312b47;
 }
 
 body::-webkit-scrollbar {
@@ -41,9 +46,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 main{
-    background-color: #312b47;
-    margin-left: 96px;
-    padding: 46px 32px;
+    padding: 40px 32px 56px 128px;
+    min-height: 520px;
+}
+
+.c5{
+    background: linear-gradient(to bottom right, #7a5236, #c37925);
+}
+
+.c4{
+    background: linear-gradient(to bottom right, #614c7f, #906db6);
+}
+
+.c3{
+    background: linear-gradient(to bottom right, #505575, #4d92a8);
+}
+
+.c2{
+    background: linear-gradient(to bottom right, #4b5a5f, #558a6c);
+}
+
+.c1{
+    background: linear-gradient(to bottom right, #505863, #7b8591);
 }
 
 .poppinsBold{
@@ -55,7 +79,7 @@ main{
 }
 
 .whitneyBold{
-    font-family: whitneyBold;
+    font-family: whitneyBold, sans-serif;
 }
 
 .whitneyLight{
@@ -106,6 +130,10 @@ main{
     background-color: #352f4e;
 }
 
+.items-index-bar.active{
+    background-color: #352f4e;
+}
+
 .first-item-index-bar{
     background-color: #c34312;
     border-radius: 0 0 8px 0;
@@ -120,7 +148,7 @@ main{
 .index-bar a{
     display: block;
     text-decoration: none;
-    color: #ECE4D9;
+    color: var(--white);
 }
 
 .first-item-index-bar img{
@@ -137,7 +165,7 @@ main{
     max-height: 16px;
 }
 
-.search-index-bar, .option-index-bar{
+.search-index-bar, .option-index-bar, .ordre, .filtre{
     cursor: pointer;
 }
 
@@ -146,7 +174,7 @@ footer{
     height: 144px;
     width: 100%;
     background-color: #2A253D;
-    color: #ECE4D9;
+    color: var(--white);
     font-size: large;
 }
 
@@ -176,6 +204,7 @@ footer img:hover{
 
 .footer-items{
     padding: 2px 18px;
+    text-align: center;
 }
 
 .footer-items div{
@@ -184,9 +213,134 @@ footer img:hover{
 
 .link-footer-a{
     text-decoration: none;
-    color: #ECE4D9;
+    color: var(--white);
 }
 
 .link-footer-a:hover{
     color: #7468a3;
+}
+
+.contact-footer{
+    padding: 0 0 0 43px;
+}
+
+.contact-footer img{
+    width: 4rem;
+    margin-top: 10px;
+}
+
+.box-object{
+    margin: 0 64px;
+}
+
+.box-object h1{
+    color: var(--white);
+}
+
+.ordre{
+    color: #4a5366;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: var(--white);
+}
+
+.filtre{
+    color: #4a5366;
+    width: 212px;
+    padding: 8px 0px 8px 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: var(--white);
+}
+
+.filtre img{
+    width: 20px;
+    height: 17.5px;
+    margin-top: 4px;
+}
+
+.searchBar input{
+    color: white;
+    background-color: #473e67;
+    border: 2px solid #534978;
+    padding: 8px 20px;
+    width: 690px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: whitneyBold;
+}
+
+::placeholder{
+    color: white;
+}
+
+.box-object-tri div{
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.objectList-item{
+    margin: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.objectList-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2px 4px #e9e5dc;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.objectList{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.objectList-avatar{
+    max-width: 128px;
+    max-height: 128px;
+    position: absolute;
+    border-radius: 10px 10px 30px 0;
+    z-index: 2;
+}
+
+.objectList-element{
+    position: absolute;
+    z-index: 3;
+    width: 32px;
+    margin: 5px;
+}
+
+.objectList-card{
+    background-color: var(--white);
+    width: 128px;
+    height: 158px;
+    color: #4a5366;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    display: table;
+    width: 128px;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-name{
+    padding: 2px 0;
+}
+
+.objectList-card span{
+    margin-top: auto;
+}
+
+.br-top10{
+    height: 10px;
+}
+
+.objectName span{
+    vertical-align:middle;
+    display: table-cell;
 }

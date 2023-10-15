@@ -28,7 +28,11 @@
                 </a>
             </li>
             <li>
-                <a href="version.php" class="items-index-bar">
+                <a href="version.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'version.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/db.png" alt="version_icon" class="items-v2">
                         <p class="poppinsBold hidden">Version</p>
@@ -36,7 +40,11 @@
                 </a>
             </li>
             <li>
-                <a href="personnage.php" class="items-index-bar">
+                <a href="personnage.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'personnage.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/perso.png" alt="perso_icon" class="items-v1">
                         <p class="poppinsBold hidden">Personnages</p>
@@ -44,7 +52,11 @@
                 </a>
             </li>
             <li>
-                <a href="arme.php" class="items-index-bar">
+                <a href="arme.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'arme.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/arme.png" alt="arme_icon" class="items-v1">
                         <p class="poppinsBold hidden">Armes</p>
@@ -52,7 +64,11 @@
                 </a>
             </li>
             <li>
-                <a href="artefact.php" class="items-index-bar">
+                <a href="artefact.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'artefact.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/artefact.png" alt="artefact_icon" class="items-v2">
                         <p class="poppinsBold hidden">Artéfacts</p>
@@ -60,7 +76,11 @@
                 </a>
             </li>
             <li>
-                <a href="monstre.php" class="items-index-bar">
+                <a href="monstre.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'monstre.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/monstre.png" alt="npc_icon" class="items-v1">
                         <p class="poppinsBold hidden">NPC</p>
@@ -68,7 +88,11 @@
                 </a>
             </li>
             <li>
-                <a href="nourriture.php" class="items-index-bar">
+                <a href="nourriture.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'nourriture.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/food.png" alt="food_icon" class="items-v1">
                         <p class="poppinsBold hidden">Nourritures</p>
@@ -76,7 +100,11 @@
                 </a>
             </li>
             <li>
-                <a href="material.php" class="items-index-bar">
+                <a href="material.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'material.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/material.png" alt="material_icon" class="items-v1">
                         <p class="poppinsBold hidden">Matériaux</p>
@@ -84,7 +112,11 @@
                 </a>
             </li>
             <li>
-                <a href="namecard.php" class="items-index-bar">
+                <a href="namecard.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'namecard.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/namecard.png" alt="namecard_icon" class="items-v1">
                         <p class="poppinsBold hidden">Carte de visites</p>
@@ -92,7 +124,11 @@
                 </a>
             </li>
             <li>
-                <a href="TCG.php" class="items-index-bar">
+                <a href="TCG.php" class="items-index-bar <?php 
+                    if (strpos($_SERVER['PHP_SELF'], 'TCG.php') == true){
+                        echo "active";
+                    }
+                ?>">
                     <div>
                         <img src="img/icon/tcg.png" alt="TCG_icon" class="items-v2">
                         <p class="poppinsBold hidden">TCG</p>

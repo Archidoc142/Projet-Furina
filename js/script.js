@@ -1,14 +1,14 @@
 const indexBar = document.querySelector('.index-bar');
-const paragraphs = indexBar.querySelectorAll('p');
+const paragraphe_index_bar = indexBar.querySelectorAll('p');
 
 indexBar.addEventListener('mouseover', () => {
-    paragraphs.forEach(paragraph => {
+    paragraphe_index_bar.forEach(paragraph => {
         paragraph.style.display = 'block';
     });
 });
 
 indexBar.addEventListener('mouseout', () => {
-    paragraphs.forEach(paragraph => {
+    paragraphe_index_bar.forEach(paragraph => {
         paragraph.style.display = 'none';
     });
 });
