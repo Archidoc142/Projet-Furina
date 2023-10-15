@@ -51,23 +51,23 @@ main{
 }
 
 .c5{
-    background: linear-gradient(to bottom right, #7a5236, #c37925);
+    background: linear-gradient(to bottom right, #795236, #c87c24);
 }
 
 .c4{
-    background: linear-gradient(to bottom right, #614c7f, #906db6);
+    background: linear-gradient(to bottom right, #604c7e, #936fba);
 }
 
 .c3{
-    background: linear-gradient(to bottom right, #505575, #4d92a8);
+    background: linear-gradient(to bottom right, #505575, #5886ac);
 }
 
 .c2{
-    background: linear-gradient(to bottom right, #4b5a5f, #558a6c);
+    background: linear-gradient(to bottom right, #455f60, #5a977a);
 }
 
 .c1{
-    background: linear-gradient(to bottom right, #505863, #7b8591);
+    background: linear-gradient(to bottom right, #595766, #808385);
 }
 
 .poppinsBold{
@@ -343,4 +343,36 @@ footer img:hover{
 .objectName span{
     vertical-align:middle;
     display: table-cell;
+}
+
+.objectListItem-star{
+    width: 18.34px;
+    height: 17.78px;
+    filter: drop-shadow(#e3721b 0px 0px 1px);    
+}
+
+.starContainer{
+    position: absolute;
+    z-index: 8;
+    margin-top: 91px;
+}
+
+.str_20px{
+    width: 20px;
+}
+
+.star-1{
+    margin-left: 54px;
+}
+.star-2{
+    margin-left: 44px;
+}
+.star-3{
+    margin-left: 34px;
+}
+.star-4{
+    margin-left: 24px;
+}
+.star-5{
+    margin-left: 14px;
 }

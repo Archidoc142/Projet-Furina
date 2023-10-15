@@ -30,11 +30,18 @@ include_once 'inc/header.inc.php';
                      echo "<img src='img/perso/" . $row['name'] . ".png' alt='" . $row['name'] . "' class='objectList-avatar " . 'c' . $row['rarity'] . "'>";
                      echo "<img src='img/icon/" . $row['element'] . ".png' alt='" . $row['element'] . "' class='objectList-element'>";
                      echo "<div class='br-top10'></div>";
-                     echo "<div class='objectList-card whitneyBold " . (strlen($row['name']) > 14 ? 'center-name' : '') . "'><span>" . $row['name'] . "</span></div>";
+                     echo "<div class='objectList-card whitneyBold " . (strlen($row['name']) > 14 ? 'center-name' : '') . "'><span>" . $row['name'] . "</span>";
+                        echo "<div class='flex starContainer star-" . $row['rarity'] . "'>";
+                           for ($i = 0; $i < $row['rarity'];$i++){
+                              echo "<div class='str_20px'><img src='img/icon/star.png' class='objectListItem-star'></div>";
+                           }
+                        echo "</div>";
+                     echo "</div>";
                   echo "</div>";
                echo "</a>";
             }
          ?>
       </div>
    </div>
+
 <?php include_once 'inc/footer.inc.php';?>

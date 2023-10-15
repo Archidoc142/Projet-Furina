@@ -12,3 +12,15 @@ indexBar.addEventListener('mouseout', () => {
         paragraph.style.display = 'none';
     });
 });
+
+// Filtres
+
+const filterObjectList = document.querySelector('.ordre');
+
+filterObjectList.addEventListener('click', () => {
+    if (filterObjectList.textContent.includes('▼')) {
+        filterObjectList.innerHTML = '<a class="whitneyBold">▲</a>';
+    } else {
+        filterObjectList.innerHTML = '<a class="whitneyBold">▼</a>';
+    }
+});
