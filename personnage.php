@@ -2,10 +2,25 @@
 require_once 'classe/PDOFactory.php';
 $bdd = PDOFactory::getMySQLConnection();
 $bddResults = $bdd->query("SELECT * FROM personnage ORDER BY id DESC;");
+$results = $bddResults->fetchAll(); // Temporaire
 include_once 'inc/header.inc.php';
 ?>
 
 <main>
+   <div class="filter" id="filter">
+      <div class="filter-header">
+         <div class="whitneyBold">Filtre</div>
+         <div data-close-button class="close-button">&times;</div>
+      </div>
+      <div class="filterContent">
+         <div class="filter-body">
+            
+         </div>
+      </div>
+   </div>
+   <div id="overlay"></div>
+
+
    <div class="box-object">
       <h1 class="whitneyBold">Archive / Personnages</h1>
 
@@ -13,7 +28,7 @@ include_once 'inc/header.inc.php';
          <div class="ordre">
             <a class="whitneyBold">▲</a>
          </div>
-         <div class="flex filtre">
+         <div class="flex filtre" data-filter-target="#filter">
             <img src="img/icon/filtre.png" alt="filtre_icon">
             <a class="whitneyBold">Filtre</a>
          </div>
@@ -24,8 +39,8 @@ include_once 'inc/header.inc.php';
 
       <div class="flex objectList">
          <?php
-            foreach ($bddResults as $row) {
-               echo "<a href='" . $row['name'] . "' class='objectList-item'>";
+            foreach ($results as $row) {
+               echo "<a href='" . $row['name'] . "' class='objectList-item' data-nom=" . $row['name'] . " data-element=" . $row['element'] . " data-rarity=" . $row['rarity'] . " data-arme=" . $row['type_id'] . ">";
                   echo "<div class='objectList-container'>";
                      echo "<img src='img/perso/" . $row['name'] . ".png' alt='" . $row['name'] . "' class='objectList-avatar " . 'c' . $row['rarity'] . "'>";
                      echo "<img src='img/icon/" . $row['element'] . ".png' alt='" . $row['element'] . "' class='objectList-element'>";
