@@ -22,29 +22,44 @@ const filterObjectList = document.querySelector('.ordre');
 filterObjectList.addEventListener('click', () => {
     if (filterObjectList.textContent.includes('▼')) {
         filterObjectList.innerHTML = '<a class="whitneyBold">▲</a>';
+        changeOrder(false);
     } else {
         filterObjectList.innerHTML = '<a class="whitneyBold">▼</a>';
+        changeOrder(true);
     }
 });
 
+function changeOrder(order){
+    if (order){
+        for (let i = 0; i < items.length; i++) {
+            items[i].style.order = items.length - 1 - i;
+        }    
+    } else {
+        for (let i = 0; i < items.length; i++) {
+            items[i].style.order = i;
+        }  
+    }
+};
 
 const searchBar = document.getElementById('searchBar');
 const items = document.querySelectorAll('.objectList-item');
 
-searchBar.addEventListener('input', function(){
+searchBar.addEventListener('input', () => {
     const recherche = searchBar.value.toLowerCase();
 
     items.forEach(function(item){
         let nom = item.getAttribute('data-nom').toLowerCase();
         if (nom.includes(recherche)){
             item.style.display = 'block';
+            item.setAttribute('data-filtered', 'false');
         }
         else {
             item.style.display = 'none';
+            item.setAttribute('data-filtered', 'true');
         }
     })
+    passFilter();
 });
-
 
 const openFilterButtons = document.querySelectorAll('[data-filter-target]');
 const closeFilterButtons = document.querySelectorAll('[data-close-button]');
@@ -99,4 +114,72 @@ function closeFilter(filter) {
     if (filter == null) return;
     filter.classList.remove('active');
     overlay.classList.remove('active');
+};
+
+const filterButtons = document.querySelectorAll('.filter-button');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        if (button.innerText == 'All') {
+            const btnParent = button.parentNode.parentNode.querySelectorAll('.filter-button');
+            const isActive = button.classList.contains('active');
+
+            if (isActive) {
+                btnParent.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+            } else {
+                btnParent.forEach(btn => {
+                    btn.classList.add('active');
+                });
+            }
+        } else {
+            button.classList.toggle('active');
+        }
+        passFilter();
+    });
+});
+
+function passFilter() {
+    const filterRarity = document.querySelector('.filter-rarity-con');
+    const filterArme = document.querySelector('.filter-arme-con');
+    const filterElement = document.querySelector('.filter-element-con');
+
+    const rarityButtons = filterRarity.querySelectorAll('.filter-button');
+    const ArmeButtons = filterArme.querySelectorAll('.filter-button');
+    const elementButtons = filterElement.querySelectorAll('.filter-button');
+
+    items.forEach(item => {
+        const itemRarity = item.getAttribute('data-rarity');
+        const itemArme = item.getAttribute('data-arme');
+        const itemElement = item.getAttribute('data-element');
+        const isFiltered = item.getAttribute('data-filtered') === 'true';
+
+        let shouldDisplay = !isFiltered;
+
+        rarityButtons.forEach(button => {
+            const btn = button.getAttribute('data-val');
+            if (!button.classList.contains('active') && btn === itemRarity) {
+                shouldDisplay = false;
+            }
+        });
+        ArmeButtons.forEach(button => {
+            const btn = button.getAttribute('data-val');
+            if (!button.classList.contains('active') && btn === itemArme) {
+                shouldDisplay = false;
+            }
+        });
+        elementButtons.forEach(button => {
+            const btn = button.getAttribute('data-val');
+            if (!button.classList.contains('active') && btn === itemElement) {
+                shouldDisplay = false;
+            }
+        });
+
+        if (!shouldDisplay) {
+            item.style.display = 'none';
+        } else {
+            item.style.display = 'block';
+        }
+    });
 };

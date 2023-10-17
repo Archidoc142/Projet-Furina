@@ -94,14 +94,17 @@ main{
     display: none;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 .index-bar{
     display: flex;
     flex-direction: column;
     position: fixed;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 92px;
-    background-color: #ccc;
     z-index: 10;
     background-color: #2a253d;
     transition: width 0.2s;
@@ -406,7 +409,8 @@ footer img:hover{
 }
 
 .filterContent{
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .filter-body{
@@ -414,6 +418,7 @@ footer img:hover{
     max-height: calc(100vh - 15.8rem);
     margin: 0 64px;
     padding: 32px 0;
+    gap: 1rem;
 }
 
 .close-button{
@@ -446,4 +451,57 @@ footer img:hover{
 #overlay.active{
     opacity: 0.8;
     pointer-events: all;
+}
+
+.filter-element{
+    font-size: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.filter-element h3{
+    font-size: 16px;
+    margin-right: 8px;
+    padding-top: 3.5px;
+}
+
+.filter-element div:first-of-type{
+    padding-bottom: 8px;
+}
+
+.filter-button{
+    cursor: pointer;
+    background-color: #312b47;
+    border: 2px solid #42395f;    
+    border-radius: 8px;
+    text-align: center;
+}
+
+.button-all{
+    padding: 0 8px;
+    max-height: 28px;
+}
+
+.button-all p {
+    padding-top: 2px;
+}
+
+.filter-button.active{
+    background-color: #473e67;
+    border-color: #584c7f;
+}
+
+.filter-element-con img, .filter-arme-con img{
+    width: 45px;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.filter-rarity-con p{
+    font-weight: bold;
+    color: white;
+    margin-right: 8px;
+    padding-top: 8px;
+    width: 45px;
+    height: 45px;
 }
