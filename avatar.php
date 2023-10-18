@@ -77,12 +77,12 @@ include_once 'inc/header.inc.php';
          <?php
             $j = 1;
             foreach ($bddResults as $row) {
-               echo "<a href='" . $row['name'] . "' class='objectList-item' data-nom='" . $row['name'] . "' data-element='" . $row['element'] . "' data-rarity='" . $row['rarity'] . "' data-arme='" . $row['type_id'] . "' style='order:" . $j . "'>";
+               echo "<a href='p/avatar/" . $row['name'] . ".php' class='objectList-item' data-nom='" . $row['name'] . "' data-element='" . $row['element'] . "' data-rarity='" . $row['rarity'] . "' data-arme='" . $row['type_id'] . "' style='order:" . $j . "'>";
                echo "<div class='objectList-container'>";
                      echo "<img src='img/perso/" . $row['name'] . ".png' alt='" . $row['name'] . "' class='objectList-avatar " . 'c' . $row['rarity'] . "'>";
                      echo "<img src='img/icon/" . $row['element'] . ".png' alt='" . $row['element'] . "' class='objectList-element'>";
                      echo "<div class='br-top10'></div>";
-                     echo "<div class='objectList-card whitneyBold " . (strlen($row['name']) > 14 ? 'center-name' : '') . "'><span>" . $row['name'] . "</span>";
+                     echo "<div class='objectList-card whitneyBold'><div class='nameObject'><span>" . $row['name'] . "</span></div>";
                         echo "<div class='flex starContainer star-" . $row['rarity'] . "'>";
                            for ($i = 0; $i < $row['rarity'];$i++){
                               echo "<div class='str_20px'><img src='img/icon/star.png' class='objectListItem-star'></div>";

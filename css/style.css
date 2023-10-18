@@ -46,7 +46,7 @@ body{
 }
 
 main{
-    padding: 40px 32px 56px 128px;
+    padding: 58px 32px 56px 128px;
     min-height: 520px;
 }
 
@@ -320,7 +320,7 @@ footer img:hover{
     width: 128px;
     height: 158px;
     color: #4a5366;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     border-radius: 10px;
     display: table;
@@ -328,10 +328,6 @@ footer img:hover{
     padding: 12px 0;
     display: flex;
     flex-direction: column;
-}
-
-.center-name{
-    padding: 2px 0;
 }
 
 .objectList-card span{
@@ -504,4 +500,13 @@ footer img:hover{
     padding-top: 8px;
     width: 45px;
     height: 45px;
+}
+
+.nameObject{
+    justify-content: center;
+    display: flex;
+    width: 128px;
+    height: 36px;
+    margin-top: 106px;
+    padding: 3px 2px 0 2px;
 }
