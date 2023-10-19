@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 18 oct. 2023 à 14:47
+-- Généré le : jeu. 19 oct. 2023 à 15:06
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -219,6 +219,245 @@ INSERT INTO `arme` (`name`, `rarity`, `type_id`, `id`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `artefact`
+--
+
+CREATE TABLE `artefact` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `rarity` int(11) DEFAULT NULL,
+  `setName` varchar(50) DEFAULT NULL,
+  `objectId` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `artefact`
+--
+
+INSERT INTO `artefact` (`id`, `name`, `rarity`, `setName`, `objectId`) VALUES
+(2, 'Fleur de l\'Aventurier', 3, 'Aventurier', 1),
+(3, 'Plume de queue de l\'Aventurier', 3, 'Aventurier', 2),
+(4, 'Montre de poche de l\'Aventurier', 3, 'Aventurier', 3),
+(5, 'Coupe en or de l\'Aventurier', 3, 'Aventurier', 4),
+(6, 'Bandeau de l\'Aventurier', 3, 'Aventurier', 5),
+(7, 'Trèfle du Chanceux', 3, 'Chanceux', 1),
+(8, 'Plume d\'aigle du Chanceux', 3, 'Chanceux', 2),
+(9, 'Sablier du Chanceux', 3, 'Chanceux', 3),
+(10, 'Coupe du Chanceux', 3, 'Chanceux', 4),
+(11, 'Diadème d\'argent du Chanceux', 3, 'Chanceux', 5),
+(12, 'Anémone du Médecin itinérant', 3, 'Médecin itinérant', 1),
+(13, 'Plume de hibou du Médecin itinérant', 3, 'Médecin itinérant', 2),
+(14, 'Montre de poche du Médecin itinérant', 3, 'Médecin itinérant', 3),
+(15, 'Pot à remèdes du Médecin itinérant', 3, 'Médecin itinérant', 4),
+(16, 'Mouchoir du Médecin itinérant', 3, 'Médecin itinérant', 5),
+(17, 'Fleur du Voyageur', 4, 'Cœur du Voyageur', 1),
+(18, 'Plume du Voyageur\r\n', 4, 'Cœur du Voyageur', 2),
+(19, 'Montre du Voyageur', 4, 'Cœur du Voyageur', 3),
+(20, 'Calice du Voyageur', 4, 'Cœur du Voyageur', 4),
+(21, 'Couronne du Voyageur', 4, 'Cœur du Voyageur', 5),
+(22, 'Fleur du Miracle', 4, 'Miracle', 1),
+(23, 'Plume du Miracle', 4, 'Miracle', 2),
+(24, 'Sablier du Miracle', 4, 'Miracle', 3),
+(25, 'Coupe du Miracle', 4, 'Miracle', 4),
+(26, 'Boucles d\'oreilles du Miracle', 4, 'Miracle', 5),
+(27, 'Rose du Berserker', 4, 'Berserker', 1),
+(28, 'Plume du Berserker', 4, 'Berserker', 2),
+(29, 'Sablier du Berserker', 4, 'Berserker', 3),
+(30, 'Coupe du Berserker', 4, 'Berserker', 4),
+(31, 'Masque du Berserker', 4, 'Berserker', 5),
+(32, 'Broche de l\'Instructeur', 4, 'Instructeur', 1),
+(33, 'Plume de l\'Instructeur', 4, 'Instructeur', 2),
+(34, 'Montre de poche de l\'Instructeur', 4, 'Instructeur', 3),
+(35, 'Tasse à thé de l\'Instructeur', 4, 'Instructeur', 4),
+(36, 'Chapeau de l\'Instructeur', 4, 'Instructeur', 5),
+(37, 'Fleur de l\'Exilé', 4, 'Exilé', 1),
+(38, 'Plume de l\'Exilé', 4, 'Exilé', 2),
+(39, 'Montre de poche de l\'Exilé', 4, 'Exilé', 3),
+(40, 'Coupe de l\'Exilé', 4, 'Exilé', 4),
+(41, 'Diadème de l\'Exilé', 4, 'Exilé', 5),
+(42, 'Fleur du Gardien', 4, 'Cœur du Gardien', 1),
+(43, 'Plume du Gardien', 4, 'Cœur du Gardien', 2),
+(44, 'Horloge du Gardien', 4, 'Cœur du Gardien', 3),
+(45, 'Coupe du Gardien', 4, 'Cœur du Gardien', 4),
+(46, 'Bandeau du Gardien', 4, 'Cœur du Gardien', 5),
+(47, 'Emblème du Brave', 4, 'Cœur du Brave', 1),
+(48, 'Espoir du Brave', 4, 'Cœur du Brave', 2),
+(49, 'Persévérance du Brave', 4, 'Cœur du Brave', 3),
+(50, 'Dignité du Brave', 4, 'Cœur du Brave', 4),
+(51, 'Couronne du Brave', 4, 'Cœur du Brave', 5),
+(52, 'Fleur écarlate de l\'Artiste martial', 4, 'Artiste martial', 1),
+(53, 'Plume de l\'Artiste martial', 4, 'Artiste martial', 2),
+(54, 'Sablier d\'eau de l\'Artiste martial', 4, 'Artiste martial', 3),
+(55, 'Coupe de l\'Artiste martial', 4, 'Artiste martial', 4),
+(56, 'Bandeau de l\'Artiste martial', 4, 'Artiste martial', 5),
+(57, 'Broche du Parieur', 4, 'Parieur', 1),
+(58, 'Plume du Parieur', 4, 'Parieur', 2),
+(59, 'Montre de poche du Parieur', 4, 'Parieur', 3),
+(60, 'Coupe à dés du Parieur', 4, 'Parieur', 4),
+(61, 'Boucles d\'oreilles du Parieur', 4, 'Parieur', 5),
+(62, 'Marque-page de l\'Érudit', 4, 'Érudit', 1),
+(63, 'Plume de l\'Érudit', 4, 'Érudit', 2),
+(64, 'Horloge de l\'Érudit', 4, 'Érudit', 3),
+(65, 'Coupe de l\'Érudit', 4, 'Érudit', 4),
+(66, 'Lunettes de l\'Érudit', 4, 'Érudit', 5),
+(67, 'Couronne rituelle Pyro', 4, 'Sacrifieur Pyro', 1),
+(68, 'Couronne rituelle Hydro', 4, 'Sacrifieur Hydro', 1),
+(69, 'Couronne rituelle Électro', 4, 'Sacrifieur Électro', 1),
+(70, 'Couronne rituelle Cryo', 4, 'Sacrifieur Cryo', 1),
+(71, 'Mémoires du froid', 5, 'Briseur de glace', 1),
+(72, 'Résolution du Briseur de glace', 5, 'Briseur de glace', 2),
+(73, 'Fin du pays des glaces', 5, 'Briseur de glace', 3),
+(74, 'Fierté du Tisseur de givre', 5, 'Briseur de glace', 4),
+(75, 'Écho de l\'hiver', 5, 'Briseur de glace', 5),
+(76, 'Cœur du Dompteur de foudre', 5, 'Dompteur de foudre', 1),
+(77, 'Plume du Dompteur de foudre', 5, 'Dompteur de foudre', 2),
+(78, 'Temps du Dompteur de foudre', 5, 'Dompteur de foudre', 3),
+(79, 'Calice du Dompteur de foudre', 5, 'Dompteur de foudre', 4),
+(80, 'Couronne du Dompteur de foudre', 5, 'Dompteur de foudre', 5),
+(81, 'Détermination du Marcheur du feu', 5, 'Marcheur du feu', 1),
+(82, 'Insouciance du Marcheur du feu', 5, 'Marcheur du feu', 2),
+(83, 'Tourment du Marcheur du feu', 5, 'Marcheur du feu', 3),
+(84, 'Éveil du Marcheur du feu', 5, 'Marcheur du feu', 4),
+(85, 'Sagesse du Marcheur du feu', 5, 'Marcheur du feu', 5),
+(86, 'Cœur lointain de la Demoiselle', 5, 'Amour chéri', 1),
+(87, 'Pensée de la Demoiselle', 5, 'Amour chéri', 2),
+(88, 'Petit matin de la Demoiselle', 5, 'Amour chéri', 3),
+(89, 'Loisir de la Demoiselle', 5, 'Amour chéri', 4),
+(90, 'Beauté fugace de la Demoiselle', 5, 'Amour chéri', 5),
+(91, 'Nostalgie du Gladiateur', 5, 'Rideau du Gladiateur', 1),
+(92, 'Destination du Gladiateur', 5, 'Rideau du Gladiateur', 2),
+(93, 'Espoir du Gladiateur', 5, 'Rideau du Gladiateur', 3),
+(94, 'Ivresse du Gladiateur', 5, 'Rideau du Gladiateur', 4),
+(95, 'Triomphe du Gladiateur', 5, 'Rideau du Gladiateur', 5),
+(96, 'Souvenir de fleur des champs', 5, 'Ombre de la Verte Chasseuse', 1),
+(97, 'Plume de flèche de la Verte Chasseuse', 5, 'Ombre de la Verte Chasseuse', 2),
+(98, 'Détermination de la Verte Chasseuse', 5, 'Ombre de la Verte Chasseuse', 3),
+(99, 'Récipient de la Verte Chasseuse', 5, 'Ombre de la Verte Chasseuse', 4),
+(100, 'Diadème de la Verte Chasseuse', 5, 'Ombre de la Verte Chasseuse', 5),
+(101, 'Aube de l\'orchestre', 5, 'Bande vagabonde', 1),
+(102, 'Plume de flèche du lyriste', 5, 'Bande vagabonde', 2),
+(103, 'Tombée du rideau', 5, 'Bande vagabonde', 3),
+(104, 'Gourde à cordes du ménestrel', 5, 'Bande vagabonde', 4),
+(105, 'Haut-de-forme du chef d\'orchestre', 5, 'Bande vagabonde', 5),
+(106, 'Compassion de l\'Oiselle du tonnerre', 5, 'Colère de tonnerre', 1),
+(107, 'Survivant de la catastrophe', 5, 'Colère de tonnerre', 2),
+(108, 'Sablier de tonnerre', 5, 'Colère de tonnerre', 3),
+(109, 'Présage de tombée du tonnerre', 5, 'Colère de tonnerre', 4),
+(110, 'Diadème de l\'Invocateur de tonnerre', 5, 'Colère de tonnerre', 5),
+(111, 'Fleur ardente de la Sorcière', 5, 'Sorcière des flammes ardentes', 1),
+(112, 'Plume enflammée éternelle de la Sorcière', 5, 'Sorcière des flammes ardentes', 2),
+(113, 'Temps évanoui de la Sorcière', 5, 'Sorcière des flammes ardentes', 3),
+(114, 'Feu du cœur de la Sorcière', 5, 'Sorcière des flammes ardentes', 4),
+(115, 'Chapeau brûlé de la Sorcière', 5, 'Sorcière des flammes ardentes', 5),
+(116, 'Fleur du Noble', 5, 'Ancien rituel royal', 1),
+(117, 'Plume du Noble', 5, 'Ancien rituel royal', 2),
+(118, 'Montre de poche du Noble', 5, 'Ancien rituel royal', 3),
+(119, 'Urne d\'argent du Noble', 5, 'Ancien rituel royal', 4),
+(120, 'Masque du Noble', 5, 'Ancien rituel royal', 5),
+(121, 'Fleur de fer ensanglantée', 5, 'Chevalerie ensanglantée', 1),
+(122, 'Plume noire ensanglantée', 5, 'Chevalerie ensanglantée', 2),
+(123, 'Sablier du Chevalier ensanglanté', 5, 'Chevalerie ensanglantée', 3),
+(124, 'Coupe du chevalier ensanglantée', 5, 'Chevalerie ensanglantée', 4),
+(125, 'Masque de fer ensanglanté', 5, 'Chevalerie ensanglantée', 5),
+(126, 'Fleur des crevasses', 5, 'Roche ancienne', 1),
+(127, 'Plume des sommets escarpés', 5, 'Roche ancienne', 2),
+(128, 'Cadran du jade immuable', 5, 'Roche ancienne', 3),
+(129, 'Coupe en roche escarpée', 5, 'Roche ancienne', 4),
+(130, 'Masque en basalte inerte', 5, 'Roche ancienne', 5),
+(131, 'Fleur de la nuit d\'été', 5, 'Météore inversé', 1),
+(132, 'Fin de la nuit d\'été', 5, 'Météore inversé', 2),
+(133, 'Temps de la nuit d\'été', 5, 'Météore inversé', 3),
+(134, 'Ballon d\'eau de la nuit d\'été', 5, 'Météore inversé', 4),
+(135, 'Masque de la nuit d\'été', 5, 'Météore inversé', 5),
+(136, 'Broche plaquée', 5, 'Âme des profondeurs', 1),
+(137, 'Brise nostalgique', 5, 'Âme des profondeurs', 2),
+(138, 'Boussole en bronze', 5, 'Âme des profondeurs', 3),
+(139, 'Calice des profondeurs', 5, 'Âme des profondeurs', 4),
+(140, 'Calot taché de vin', 5, 'Âme des profondeurs', 5),
+(141, 'Fleur honorifique', 5, 'Ténacité du Millelithe', 1),
+(142, 'Plume de guerre du Commandant', 5, 'Ténacité du Millelithe', 2),
+(143, 'Cadran solaire doré', 5, 'Ténacité du Millelithe', 3),
+(144, 'Coupe du serment', 5, 'Ténacité du Millelithe', 4),
+(145, 'Ancien heaume de Général', 5, 'Ténacité du Millelithe', 5),
+(146, 'Fleur inaltérable', 5, 'Flamme blême', 1),
+(147, 'Plume du sage docteur', 5, 'Flamme blême', 2),
+(148, 'Figé dans le temps', 5, 'Flamme blême', 3),
+(149, 'Coupe de transcendance', 5, 'Flamme blême', 4),
+(150, 'Masque ricanant', 5, 'Flamme blême', 5),
+(151, 'Flèche de nostalgie', 5, 'Réminiscence nostalgique', 1),
+(152, 'Flèche de nostalgie', 5, 'Réminiscence nostalgique', 2),
+(153, 'Horloge de l\'aube', 5, 'Réminiscence nostalgique', 3),
+(154, 'Cœur plein d\'espoir', 5, 'Réminiscence nostalgique', 4),
+(155, 'Visage capricieux', 5, 'Réminiscence nostalgique', 5),
+(156, 'Tsuba magnifique', 5, 'Emblème du destin brisé', 1),
+(157, 'Plume brisée', 5, 'Emblème du destin brisé', 2),
+(158, 'Inro de la tempête', 5, 'Emblème du destin brisé', 3),
+(159, 'Gourde pourpre', 5, 'Emblème du destin brisé', 4),
+(160, 'Kabuto orné', 5, 'Emblème du destin brisé', 5),
+(161, 'Période de floraison', 5, 'Coquille des rêves opulents', 1),
+(162, 'Plume d\'opulence', 5, 'Coquille des rêves opulents', 2),
+(163, 'Chant de vie', 5, 'Coquille des rêves opulents', 3),
+(164, 'Calebasse d\'éveil', 5, 'Coquille des rêves opulents', 4),
+(165, 'Chapeau squelettique', 5, 'Coquille des rêves opulents', 5),
+(166, 'Fleur de teinte marine', 5, 'Palourde aux teintes océaniques', 1),
+(167, 'Plume du palais des profondeurs', 5, 'Palourde aux teintes océaniques', 2),
+(168, 'Pétoncle de séparation', 5, 'Palourde aux teintes océaniques', 3),
+(169, 'Écrin de perle', 5, 'Palourde aux teintes océaniques', 4),
+(170, 'Couronne de Watatsumi', 5, 'Palourde aux teintes océaniques', 5),
+(171, 'Vie fleurie', 5, 'Au-delà cinabrin', 1),
+(172, 'Plume de lumière latente', 5, 'Au-delà cinabrin', 2),
+(173, 'Relique solaire', 5, 'Au-delà cinabrin', 3),
+(174, 'Instant du contrat', 5, 'Au-delà cinabrin', 4),
+(175, 'Maintien fulgurant', 5, 'Au-delà cinabrin', 5),
+(176, 'Fleur d\'aromesprit', 5, 'Échos d\'une offrande', 1),
+(177, 'Feuille de jade', 5, 'Échos d\'une offrande', 2),
+(178, 'Symbole de félicitation', 5, 'Échos d\'une offrande', 3),
+(179, 'Calice des sources', 5, 'Échos d\'une offrande', 4),
+(180, 'Anneaux de fluidité', 5, 'Échos d\'une offrande', 5),
+(181, 'Voyageur du labyrinthe', 5, 'Souvenir de forêt', 1),
+(182, 'Érudit des lianes', 5, 'Souvenir de forêt', 2),
+(183, 'Période de perspicacité', 5, 'Souvenir de forêt', 3),
+(184, 'Lampe des perdus', 5, 'Souvenir de forêt', 4),
+(185, 'Couronne de laurier', 5, 'Souvenir de forêt', 5),
+(186, 'Fleur d\'acier rêveuse', 5, 'Rêve doré', 1),
+(187, 'Plume du jugement', 5, 'Rêve doré', 2),
+(188, 'Les années dorées', 5, 'Rêve doré', 3),
+(189, 'Festin final de miel', 5, 'Rêve doré', 4),
+(190, 'L\'ombre du roi des sables', 5, 'Rêve doré', 5),
+(191, 'Aube de la cité des rois', 5, 'Chronique du Pavillon du désert', 1),
+(192, 'Fin du royaume doré', 5, 'Chronique du Pavillon du désert', 2),
+(193, 'Horloge du chemin perdu', 5, 'Chronique du Pavillon du désert', 3),
+(194, 'Défenseur du rêve enchanteur', 5, 'Chronique du Pavillon du désert', 4),
+(195, 'Héritage de la haute lignée du désert', 5, 'Chronique du Pavillon du désert', 5),
+(196, 'Myriade d\'Ay-Khanoum', 5, 'Fleur du paradis perdu', 1),
+(197, 'Fête du flétrissement', 5, 'Fleur du paradis perdu', 2),
+(198, 'Instant figé', 5, 'Fleur du paradis perdu', 3),
+(199, 'Bouteille magique du gardien du secret', 5, 'Fleur du paradis perdu', 4),
+(200, 'Couronne d\'améthyste', 5, 'Fleur du paradis perdu', 5),
+(201, 'Fleur odysséenne', 5, 'Rêve de la nymphe', 1),
+(202, 'Plumule de mage malsain', 5, 'Rêve de la nymphe', 2),
+(203, 'Constance de la nymphe', 5, 'Rêve de la nymphe', 3),
+(204, 'Goûter des héros', 5, 'Rêve de la nymphe', 4),
+(205, 'Monocle de dragon démoniaque', 5, 'Rêve de la nymphe', 5),
+(206, 'Étamine de l\'origine de la khvarena', 5, 'Lueur du vourukasha', 1),
+(207, 'Penne vibrante', 5, 'Lueur du vourukasha', 2),
+(208, 'Abscission ancienne', 5, 'Lueur du vourukasha', 3),
+(209, 'Festin de joie sans bornes', 5, 'Lueur du vourukasha', 4),
+(210, 'Cœur de la brillance de la khvarena', 5, 'Lueur du vourukasha', 5),
+(211, 'Broche du chasseur', 5, 'Chasseur de la Maréchaussée', 1),
+(212, 'Prologue du chef d\'œuvre', 5, 'Chasseur de la Maréchaussée', 2),
+(213, 'Moment du jugement', 5, 'Chasseur de la Maréchaussée', 3),
+(214, 'Réceptacle oublié', 5, 'Chasseur de la Maréchaussée', 4),
+(215, 'Visage du vétéran', 5, 'Chasseur de la Maréchaussée', 5),
+(216, 'Variation de la mélodie dorée', 5, 'Troupe dorée', 1),
+(217, 'Mue de l\'oiseau d\'or', 5, 'Troupe dorée', 2),
+(218, 'Prélude de l\'ère dorée', 5, 'Troupe dorée', 3),
+(219, 'Agitation de la nuit dorée', 5, 'Troupe dorée', 4),
+(220, 'Récompense de la Troupe dorée', 5, 'Troupe dorée', 5);
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `personnage`
 --
 
@@ -319,6 +558,12 @@ ALTER TABLE `arme`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `artefact`
+--
+ALTER TABLE `artefact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `personnage`
 --
 ALTER TABLE `personnage`
@@ -333,6 +578,12 @@ ALTER TABLE `personnage`
 --
 ALTER TABLE `arme`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
+
+--
+-- AUTO_INCREMENT pour la table `artefact`
+--
+ALTER TABLE `artefact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
 
 --
 -- Contraintes pour les tables déchargées

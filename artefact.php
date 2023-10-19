@@ -19,8 +19,6 @@ include_once 'inc/header.inc.php';
                   <div class="filter-button active button-all"><p>All</p></div>
                </div>
                <div class="flex poppinsLight filter-rarity-con">
-                  <p class="filter-button active" data-val='1'>1★</p>
-                  <p class="filter-button active" data-val='2'>2★</p>
                   <p class="filter-button active" data-val='3'>3★</p>
                   <p class="filter-button active" data-val='4'>4★</p>
                   <p class="filter-button active" data-val='5'>5★</p>               
