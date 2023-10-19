@@ -183,3 +183,35 @@ function passFilter() {
         }
     });
 };
+
+function selectObject() {
+    const chosenType = document.getElementById('selectionType');
+    if (chosenType.value === '0'){
+        items.forEach((item) => {
+          const isFiltered = item.getAttribute('data-filtered') === 'true';
+          let shouldDisplay = !isFiltered;     
+          if (!shouldDisplay) {
+            item.style.display = 'none';
+          } else {
+            item.style.display = 'block';
+          }
+          });
+        return;
+    }
+
+    items.forEach((item) => {
+       const itemType = item.getAttribute('data-type');
+       const isFiltered = item.getAttribute('data-filtered') === 'true';
+       let shouldDisplay = !isFiltered;
+
+       if(chosenType.value !== itemType){
+          shouldDisplay = false;
+       }
+
+       if (!shouldDisplay) {
+          item.style.display = 'none';
+       } else {
+          item.style.display = 'block';
+       }
+    });
+ };

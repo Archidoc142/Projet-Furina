@@ -158,7 +158,7 @@ main{
     margin: 16px;
 }
 
-.search-index-bar, .option-index-bar, .ordre, .filtre{
+.search-index-bar, .option-index-bar, .ordre, .filtre, #selectionType{
     cursor: pointer;
 }
 
@@ -546,4 +546,21 @@ footer img:hover{
 .Cryo{
     fill: rgb(85, 221, 255);
     padding: 7px 2.5px 5.8px 4.9px;
+}
+
+#selectionType{
+    background-color: var(--white);
+    border: 1.3px solid rgba(74,83,102);
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 210px;
+    height: 100%;
+    color: #4a5366;
+    outline: none;
+}
+
+#selectionType option{
+    font-size: 16px;
+    background-color: var(--white);
 }
