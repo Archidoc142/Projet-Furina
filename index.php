@@ -6,5 +6,4 @@
 ?>
 <main>
 
-
 <?php include_once 'inc/footer.inc.php';?>
