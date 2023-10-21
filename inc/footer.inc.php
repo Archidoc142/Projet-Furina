@@ -1,5 +1,4 @@
 </main>
-
 <footer class="flex">
     <div class="whitneyLight">
         <p>Projet Furina est une base de données Genshin Impact faite en fonction du design de l'excellent site « <a target="_blank" href="https://ambr.top/fr" class="link-footer-a">project Amber</a> ».</p>

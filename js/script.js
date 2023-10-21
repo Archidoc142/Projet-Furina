@@ -43,9 +43,11 @@ function changeOrder(order){
 
 const searchBar = document.getElementById('searchBar');
 const items = document.querySelectorAll('.objectList-item');
+const sheetId = searchBar.getAttribute('data-sheetId');
 
 searchBar.addEventListener('input', () => {
     const recherche = searchBar.value.toLowerCase();
+    console.log(sheetId);
 
     items.forEach(function(item){
         let nom = item.getAttribute('data-nom').toLowerCase();
@@ -58,7 +60,12 @@ searchBar.addEventListener('input', () => {
             item.setAttribute('data-filtered', 'true');
         }
     })
-    passFilter();
+
+    if(sheetId === null){
+        passFilter();
+    } else {
+        selectObject();
+    }
 });
 
 const openFilterButtons = document.querySelectorAll('[data-filter-target]');
