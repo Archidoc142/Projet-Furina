@@ -69,8 +69,8 @@
             <div class="cat pointer"><p>Talent</p></div>
             <div class="cat pointer"><p>Constellation</p></div>
             <div class="cat pointer"><p>Ascension</p></div>
-            <div class="cat pointer"><p>Autres</p></div>
             <div class="cat pointer"><p>Histoire</p></div>
+            <div class="cat pointer"><p>Autres</p></div>
          </div>
       </div>
 
@@ -146,38 +146,161 @@
 
          <div class="descPerso">Le point central absolu de la scène du jugement, jusqu'aux applaudissements finaux.</div>
       </div>
-
       <div class="talent contenu hidden">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur cum sint esse quaerat nulla expedita accusantium laudantium id exercitationem dicta molestias quae nemo pariatur eius deserunt odit, quis impedit.</p>
-      </div>
+         <h2>Talent</h2>
+         <div class="gridTalent">
+            <div class="aptitude">
+               <div class="align flex titleApt">
+                  <img src="img/apt/sword.png" alt="icon_apt1">
+                  <p>Attaque normale : Sollicitation de la soliste</p> <!--Aptitude #1-->
+               </div>
+               <div class="InfoTalent poppinsLight">
+                  <div class="labelInfo center whitneyBold">Informations sur les talents</div>
 
+                  <span class="spanImp">Attaque normale</span>
+                  <p>Enchaîne jusqu'à 4 attaques.</p>
+                  <br>
+                  <span class="spanImp">Attaque chargée</span>
+                  <p>Consomme de l'endurance pour déclencher une aura de danse solo, infligeant des DGT physiques aux ennemis proches et modifiant l'alignement de l'Arkhe de Furina. Si des membres du salon ou un chanteur des eaux invoqués par sa compétence élémentaire « Salon solitaire » sont présents sur le champ de bataille, ils sont changés en conséquence.</p>
+                  <br>
+                  <span class="spanImp">Arkhe : Sacralité et sécularisation</span>
+                  <p>Régulièrement, lorsque l'attaque normale de Furina touche, une épine d'inhalation ou une lame fluide est libérée à l'emplacement touché selon l'alignement actuel de son Arkhe pour infliger des <span class="hydroS">DGT Hydro</span> chargés d'énergie pneuma ou ousia.<br>Lorsque Furina est déployée au combat, son Arkhe est chargé d'énergie ousia.</p>
+                  <br>
+                  <span class="spanImp">Attaque plongeante</span>
+                  <p>Plonge depuis les airs pour frapper le sol, infligeant des DGT aux ennemis en chemin et des DGT de zone à l'impact.</p>
+                  <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
+
+                  <div class="whitneyBold nessMat flex">
+                     <div class="flex align cost">
+                        <span class="CM">Requis: </span>
+                        <img src="img/material/mora.png" alt="coût"> <!--Prix-->
+                        <p>1 652 500</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="aptitude">
+               <div class="align flex titleApt">
+                  <img src="img/apt/Salon solitaire.png" alt="icon_apt2">
+                  <p>Salon solitaire</p> <!--Aptitude #2-->
+               </div>
+               <div class="InfoTalent poppinsLight">
+                  <div class="labelInfo center whitneyBold">Informations sur les talents</div>
+
+                  <p>Furina invite les convives du Salon solitaire à se joindre à sa performance, convoquant les membres du salon ou le chanteur des eaux selon l'<span class="spanImp">alignement actuel de son Arkhe</span>.<br><br><span class="spanImp">Ousia</span><br>De l'écume danse joyeusement, infligeant des <span class="hydroS">DGT Hydro de zone</span> selon les PV max de Furina et convoquant 3 membres du salon : le gentilhomme Usher en forme de poulpe bouffi, la surintendante Chevalmarin en forme d'Hippocampe bulleux et la demoiselle Crabaletta en forme de Cuiracrabe.Ces derniers attaquent les ennemis proches de façon intermittente en donnant la priorité aux cibles que le personnage déployé attaque, infligeant des <span class="hydroS">DGT Hydro</span> selon les PV max de Furina.En attaquant, les membres du salon renforcent l'attaque en cours selon le nombre de personnages de l'équipe à proximité dont les PV sont supérieurs à 50 % tout en consommant les PV de ces derniers : lorsque 1, 2, 3 ou au moins 4 personnages sont concernés, l'attaque inflige des DGT pour une valeur équivalant respectivement à 110 %, 120 %, 130 % ou 140 % des DGT d'origine.<br><br><span class="spanImp">Pneuma</span><br>Furina convoque le chanteur des eaux, qui restaure régulièrement les PV des personnages déployés à proximité selon ses PV max.<br><br>Les membres du salon et le chanteur des eaux partagent la même durée. Ainsi, lorsque Furina change ces convives en utilisant son attaque chargée, les nouveaux arrivants héritent de la durée restante.<br>Lorsque des membres du salon ou un chanteur des eaux sont présents, Furina peut se déplacer sur l'eau.<br><br><span class="italic">Une liste fixe d'habitués fréquente le Salon solitaire de Furina. Parfois, la demoiselle Crabaletta, la surintendante Chevalmarin et le gentilhomme Usher viennent ; les mercredis maussades, c'est le chanteur qui rend visite.</span></p>
+                  <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
+                  <div class="whitneyBold nessMat flex">
+                     <div class="flex align cost">
+                        <span class="CM">Requis: </span>
+                        <img src="img/material/mora.png" alt="coût"> <!--Prix-->
+                        <p>1 652 500</p>
+                     </div>
+                  </div>
+               </div>
+            </div>aptitude
+            <div class="aptitude">
+               <div class="align flex titleApt">
+                  <img src="img/apt/Liesse populaire.png" alt="icon_apt3">
+                  <p>Liesse populaire</p> <!--Aptitude #3-->
+               </div>
+               <div class="InfoTalent poppinsLight">
+                  <div class="labelInfo center whitneyBold">Informations sur les talents</div>
+
+                  <p>Éveille l'envie de se délecter, créant une scène d'écume qui inflige des <span class="hydroS">DGT Hydro de zone</span> selon les PV max de Furina et accorde l'état Réjouissance universelle aux personnages de l'équipe à proximité : pendant sa durée, lorsque les PV actuels d'un personnage augmentent ou diminuent, Furina obtient 1 pt de fanfare à chaque fois que le personnage obtient ou perd des PV pour une valeur équivalant à 1 % de ses PV Max.<br>De plus, les DGT infligés et le bonus de soins reçus de tous les personnages de l'équipe à proximité augmentent selon la quantité de points de fanfare de Furina.<br>Une fois la durée terminée, la fanfare de Furina est annulée.<br><br><span class="italic">« Acclamez ! Louez ! Réjouissez ! Buvez ! Chaque nuit sans banquet est un gaspillage sordide de douloureuse et sobre lumière du jour... Et, hmm, ceux qui ne sont pas encore en âge peuvent prendre du jus de raisin à la place ! »</span></p>
+                  <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
+                  <div class="whitneyBold nessMat flex">
+                     <div class="flex align cost">
+                        <span class="CM">Requis: </span>
+                        <img src="img/material/mora.png" alt="coût"> <!--Prix-->
+                        <p>1 652 500</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <h2>Passive</h2><br>
+            <div class="passif">
+               <div class="align flex titleApt">
+                  <img src="img/apt/Valse inarrêtable.png" alt="icon_pas1">
+                  <p>Valse inarrêtable</p> <!--Passif #1-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Lorsque le personnage déployé de votre groupe est soigné, si ces soins ne proviennent pas de Furina et dépassent la quantité maximum qu'il peut recevoir, Furina soigne les personnages de l'équipe à proximité pour une valeur équivalant à 2 % de leurs PV max respectifs une fois toutes les 2 s pendant 4 s.</p></div>
+            </div>
+            <div class="passif">
+               <div class="align flex titleApt">
+                  <img src="img/apt/Confession inattendue.png" alt="icon_pas2">
+                  <p>Confession inattendue</p> <!--Passif #2-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Chaque tranche de 1 000 PV max que Furina possède accorde à son <span class="spanImp">Salon solitaire</span> différents effets bonus selon l'alignement de son Arkhe :<br>- Les DGT infligés par les membres du salon augmentent de 0,7 %, les DGT infligés pouvant être augmentés d'un maximum de 28 % de cette manière.<br>- L'intervalle des soins accordés aux personnages déployés à proximité par le chanteur des eaux diminue de 0,4 %, l'intervalle des soins pouvant être diminué d'un maximum de 16 % de cette manière.</p></div>
+            </div>
+            <div class="passif">
+               <div class="align flex titleApt">
+                  <img src="img/apt/Scène de la mer.png" alt="icon_pas3">
+                  <p>Scène de la mer</p> <!--Passif #3-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Le TdR des capacités des Aberrants fontemarins xénochromatiques diminue de 30 %.</p></div>
+            </div>
+         </div>
+      </div>
       <div class="constellation contenu hidden">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur cum sint esse quaerat nulla expedita accusantium laudantium id exercitationem dicta molestias quae nemo pariatur eius deserunt odit, quis impedit.</p>
+         <h2>Constellation</h2>
+         <div class="gridConstellation">
+            <div class="constel">
+               <div class="align flex titleApt">
+                  <img src="img/apt/FurinaC1.png" alt="icon_cons1">
+                  <p>1. « L'amour est un oiseau rebelle que nul ne peut apprivoiser »</p> <!--Constellation #1-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>En utilisant <span class="spanImp">Liesse populaire</span>, Furina obtient 150 pts de fanfare.<br>De plus, la limite de fanfare augmente de 100 pts.</p></div>
+            </div>
+            <div class="constel">
+               <div class="align flex titleApt">
+                  <img src="img/apt/FurinaC2.png" alt="icon_cons2">
+                  <p>2. « Comme la plume au vent, femme est volage »</p> <!--Constellation #2-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Pendant la durée de <span class="spanImp">Liesse populaire</span>, l'obtention de fanfare de Furina après une augmentation ou une diminution des PV actuels des personnages de l'équipe à proximité augmente de 250 %. De plus, chaque point de fanfare au-dessus de la limite augmente les PV max de Furina de 0,35 %, la limite de PV max pouvant être augmentée d'un maximum de 140 % de cette manière.</p></div>
+            </div>         
+            <div class="constel">
+               <div class="align flex titleApt">
+                  <img src="img/apt/FurinaC3.png" alt="icon_cons3">
+                  <p>3. « Mon mystère est scellé en moi, personne ne saura mon nom »</p> <!--Constellation #3-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Niveau d'aptitude <span class="spanImp">Liesse populaire</span> +3.<br>Niveau max : 15</p></div>
+            </div>
+            <div class="constel">
+               <div class="align flex titleApt">
+                  <img src="img/apt/FurinaC4.png" alt="icon_cons4">
+                  <p>4. « Ils ne connaissent pas la vie, ceux hors du monde souterrain ! »</p> <!--Constellation #4-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Lorsqu'un membre du salon de <span class="spanImp">Salon solitaire</span> touche un ennemi ou qu'un chanteur des eaux restaure les PV d'un personnage déployé, Furina récupère 4 pts d'énergie élémentaire. Cet effet peut être déclenché une fois toutes les 5 s.</p></div>
+            </div>
+            <div class="constel">
+               <div class="align flex titleApt">
+                  <img src="img/apt/FurinaC5.png" alt="icon_cons1">
+                  <p>5. « Son nom que je connais maintenant, c'est... »</p> <!--Constellation #5-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Niveau d'aptitude <span class="spanImp">Salon solitaire</span> +3.<br>Niveau max : 15</p></div>
+            </div>
+            <div class="constel">
+               <div class="align flex titleApt">
+                  <img src="img/apt/FurinaC6.png" alt="icon_cons1">
+                  <p>6. « Entends-moi, et levons les coupes de l'amour ! »</p> <!--Constellation #6-->
+               </div>
+               <div class="InfoTalent poppinsLight"><p>Lorsqu'elle utilise sa compétence élémentaire « Salon solitaire », Furina devient le centre d'attention pendant 10 s.<br>Pendant cette durée, les DGT de ses attaques normales, chargées et plongeantes sont convertis en <span class="hydroS">DGT Hydro</span> ne pouvant pas être enchantés et augmentent d'une valeur équivalant à 15 % de ses PV max.<br>De plus, après avoir touché un ennemi pendant cette durée, ses attaques normales, chargées et l'impact au sol de ses attaques plongeantes produisent divers effets toutes les 0,1 s selon l'alignement actuel de son Arkhe :<br><br><span class="spanImp">Arkhe : Ousia</span><br>Soigne les PV de tous les personnages de l'équipe à proximité pour une valeur équivalant à 4 % des PV max de Furina toutes les secondes pendant 2,5 s, tout déclenchement répété prolongeant cette durée.<br><br><span class="spanImp">Arkhe : Pneuma</span><br>Les DGT de cette attaque normale, chargée ou plongeante (lorsque cette dernière touche le sol) augmentent encore d'une valeur équivalant à 20 % des PV max de Furina. De plus, lorsqu'une de ces attaques touche un ennemi, tous les personnages de l'équipe à proximité perdent 1 % de leurs PV actuels.<br><br>Les effets mentionnés ci-dessus peuvent être déclenchés un maximum de 7 fois pendant la durée d'un centre d'attention, et ce dernier prend fin après 7 déclenchements d'effet ou lorsque sa durée expire.</p></div>
+            </div>
+         </div>
       </div>
 
       <div class="ascension contenu hidden">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur cum sint esse quaerat nulla expedita accusantium laudantium id exercitationem dicta molestias quae nemo pariatur eius deserunt odit, quis impedit.</p>
       </div>
 
-      <div class="autre contenu hidden">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur cum sint esse quaerat nulla expedita accusantium laudantium id exercitationem dicta molestias quae nemo pariatur eius deserunt odit, quis impedit.</p>
-      </div>
-
       <div class="histoire contenu hidden">
+         <p>Lorou ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur cum sint esse quaerat nulla expedita accusantium laudantium id exercitationem dicta molestias quae nemo pariatur eius deserunt odit, quis impedit.</p>
+      </div>
+      
+      <div class="autre contenu hidden">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur cum sint esse quaerat nulla expedita accusantium laudantium id exercitationem dicta molestias quae nemo pariatur eius deserunt odit, quis impedit.</p>
       </div>
    </div>
    
-<style> 
-   .image-background {    
-    position: fixed;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    z-index: -1;
-}
-</style>
-
 <script defer src="js/scriptPerso.js"></script>
 <?php include_once '../inc/footer.inc.php';?>
