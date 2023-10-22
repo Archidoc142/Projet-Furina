@@ -7,8 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <base href="http://localhost/Projet/Projet-Furina/"> 
    <link rel="stylesheet" href="css/style.css">
-   <title>Projet Furina</title>
    <script defer src="js/script.js"></script>
+   <title>Projet Furina</title>
 </head>
 <body>
     <nav class="index-bar">

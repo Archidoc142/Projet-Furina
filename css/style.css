@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: poppinsLight;
-    src: url(../font/Poppins-Light.ttf);
+    src: url(../font/Poppins-Regular.ttf);
 }
 
 * {
@@ -46,7 +46,7 @@ body{
 }
 
 main{
-    padding: 58px 32px 56px 128px;
+    padding: 56px 32px 56px 128px;
     min-height: 520px;
 }
 
@@ -654,3 +654,202 @@ footer img:hover{
  .svgSrc{
     margin-top: 8px;
  }
+
+ .container{
+    border: 2px solid rgba(93,81,135);
+    background-color: #473e67;
+    padding: 8px;
+    border-radius: 1rem;
+ }
+
+ .persoInfo{
+    display: grid;
+    grid-template-columns: repeat(8,minmax(0,1fr));
+    gap: 1rem;
+    color: var(--white);
+ }
+
+ .categorie{
+    grid-column: 1 / span 2;
+ }
+
+ .persoRarity{
+    margin-right: 0.25rem;
+    fill: #d97706;
+    width: 24px;
+}
+
+.namePerso{
+    align-items: center;
+}
+
+.namePerso p{
+    font-size: 30px;
+    margin-left: 8px;
+}
+
+.titrePerso{
+    font-family: poppinsLight;
+    font-size: 20px;
+}
+
+.persoPresentation{
+    margin: 0 0 8px -144px;
+    padding: 8px 8px 8px 144px;
+}
+
+.cat{
+    margin: 4px 0;
+    padding: 4px 0 4px 20px;
+    font-size: 24px;
+}
+
+.cat:hover{
+    color: var(--white);
+}
+
+.cat.active{
+    background-color: #5d5187;
+    color: var(--white);
+    border-radius: 1rem;
+}
+
+.onglet{
+    color: #cbc2c3;
+}
+
+.profile{
+    grid-column: 6 / span 3;
+    padding: 13px 16px 16px 16px;
+}
+
+.profile svg{
+    fill: #FFFFFF;
+    margin-right: 8.5px;
+    position: relative;
+    top: 2.4px;
+}
+
+table{
+    margin-top: 14px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td{
+    padding: 3.2px 16px;
+    align-items: center;
+}
+
+.tbH tr:hover{
+    outline: 2px solid var(--white);
+}
+
+table tr:nth-child(even) {
+    background-color:#433b62;
+    text-align: right;
+}
+table tr:nth-child(odd) {
+    background-color:#50486f;
+    text-align: right;
+}
+
+.niv{
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.rangeLv{
+    -webkit-appearance: none;
+    width: 160px;
+    height: 5px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.rangeLv::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #8e85ae;
+}
+
+.details{
+    background-color: var(--white);
+    border: 4px solid #8b8a93;
+    color: #494f66;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin: 16px 0;
+    padding: 4px 8px;
+    border-radius: 60px;
+    height: 40px;
+    line-height: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.details:hover{
+    background-color: #8b8a93;
+    color: var(--white);
+}
+
+.align{
+    align-items: center;
+}
+
+.tabStat{
+    width: 100%;
+}
+
+.tabStat td{
+    text-align: center;
+}
+
+.statT{
+    margin:  10px 0 0 20px;
+}
+
+.tabStat tr:first-of-type{
+    background-color: #5d5187;
+}
+
+.maxHeightStat{
+    max-height: 310px;
+}
+
+.center{
+    text-align: center;
+}
+
+.nessMat{
+    background-color: #1714214d;
+    justify-content: center;
+    border-radius: 1rem;
+    font-size: 20px;
+}
+
+.cost img{
+    width: 24px;
+    margin: 0 2px;
+}
+
+.CM{
+    color: #d3bc8e;
+    margin: 8px 0;
+}
+
+.tbH td img{
+    padding-top: 6px;
+}
+
+.descPerso{
+    margin-top: 8px;
+    padding: 0 16px;
+    color: #ffffffcc;
+}
+
+.tdImg{
+    margin-top: 7px;
+}
