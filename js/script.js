@@ -1,5 +1,4 @@
 // Nav
-
 const indexBar = document.querySelector('.index-bar');
 const paragraphe_index_bar = indexBar.querySelectorAll('p');
 
@@ -232,4 +231,4 @@ function selectObject() {
           item.style.display = 'block';
        }
     });
- };
+};

@@ -651,6 +651,15 @@ footer img:hover{
     line-height: 23px;
  }
 
+ .effetFood{
+    color: #4a5366;
+ }
+
+ .nmSpan{
+    overflow: hidden;
+    max-height: 35px;
+ }
+
  .svgSrc{
     margin-top: 8px;
  }
@@ -863,11 +872,11 @@ table tr:nth-child(odd) {
     z-index: -1;
 }
 
-.talent, .constellation{
+.talent, .constellation, .ascension, .autre{
     grid-column: 3 / span 6;
 }
 
-.talent h2, .constellation h2{
+.talent h2, .constellation h2, .autre h2{
     font-size: 36px;
     margin-bottom: 6px;
 }
@@ -877,7 +886,7 @@ table tr:nth-child(odd) {
     margin-bottom: 1rem;
 }
 
-.gridTalent{
+.gridTalent, .autreGrid{
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 1rem;
@@ -947,4 +956,124 @@ table tr:nth-child(odd) {
 
 .italic{
     font-style: italic;
+}
+
+.ascension{
+    border: 2px solid rgba(93,81,135);
+    border-radius: 1rem;
+    height: 500px;
+}
+
+.ascGrid{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.ascMatList{
+    grid-column: 3 / -1;
+    background-color: rgba(49,43,71,0.8);
+    border-radius: 1rem;
+    padding: 9px 0 0px 14px;
+    flex-wrap: wrap;
+    height: 496px;
+}
+
+.ascRsItem{
+    width: 80px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+
+.ascRsItem img{
+    width: 80px;
+}
+
+.ascRsItem img:hover{
+    transform: scale(0.85);
+    transition: transform 0.07s ease-in-out;
+}
+
+.ascRsItem div:last-of-type{
+    border-radius: 0 0 7px 7px;
+    background-color: #e9e5dc;
+    color: #4a5366;
+    padding-top: 3px;
+    height: 30px;
+}
+
+.ascRsItem div:first-of-type{
+    border-radius: 7px 7px 0 0;
+}
+
+.other{
+    border: 2px solid rgba(93,81,135);
+    background-color: #473e67;
+    border-radius: 1rem;
+    padding: 16px;
+}
+
+.outfit{
+    grid-column: span 2/span 2;
+}
+
+.namecardOther img{
+    width: 372px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.nmTitle{
+    position: absolute;
+    height: 36px;
+    margin: -39px 0px;
+    width: 372px;
+    padding: 4px 0 4px 16px;
+    font-size: 18px;
+    line-height: 1.5rem;
+    background-color: rgba(49,43,71,0.6);
+}
+
+.nmDesc{
+    position: relative;
+    bottom: 3px;
+    color: #676D79;
+    padding: 8px 16px;
+    background-color: var(--white);
+    border-radius: 0 0 1rem 1rem;
+    font-size: 16px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.otherOutfit{
+    padding: 0;
+}
+
+.iconPerso{
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 2px solid rgba(93,81,135);
+    width: 80px;
+}
+
+.iconPerso.active{
+    border: 2px solid #a097c0;
+}
+
+.iconsP{
+    border-bottom: 2px solid rgba(93,81,135);
+    padding: 8px 16px;
+}
+
+.otherOutfit div:last-of-type{
+    line-height: 1.65rem;
+    padding: 8px 16px 8px;
+}
+
+.descTenue img{
+    width: 100%;
 }

@@ -39,7 +39,7 @@ include_once 'inc/header.inc.php';
                echo "<div class='objectList-container'>";
                      echo "<img src='img/npc/" . rawurlencode($row['name']) . ".png' alt='" . $row['name'] . "' class='objectList-avatar c1'>";
                      echo "<div class='br-top10'></div>";
-                     echo "<div class='objectList-card whitneyBold " . (strlen($row['name']) > 14 ? 'lowTextBox' : '') . "'><div class='nameObject'><span>" . $row['name'] . "</span></div>";
+                     echo "<div class='objectList-card whitneyBold'><div class='nameObject'><span class='nmSpan'>" . $row['name'] . "</span></div>";
                      echo "</div>";
                   echo "</div>";
                echo "</a>";
