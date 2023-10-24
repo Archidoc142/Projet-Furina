@@ -34,7 +34,7 @@
             <li>
                 <a href="version.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'version.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -48,7 +48,7 @@
             <li>
                 <a href="avatar.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'avatar.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -62,7 +62,7 @@
             <li>
                 <a href="arme.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'arme.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -76,7 +76,7 @@
             <li>
                 <a href="artefact.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'artefact.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -90,7 +90,7 @@
             <li>
                 <a href="monstre.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'monstre.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -104,7 +104,7 @@
             <li>
                 <a href="nourriture.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'nourriture.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -118,7 +118,7 @@
             <li>
                 <a href="material.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'material.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -132,7 +132,7 @@
             <li>
                 <a href="namecard.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'namecard.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>
@@ -146,7 +146,7 @@
             <li>
                 <a href="TCG.php" class="items-index-bar<?php 
                     if (strpos($_SERVER['PHP_SELF'], 'TCG.php') == true){
-                        echo "active";
+                        echo " active";
                     }
                 ?>">
                     <div>

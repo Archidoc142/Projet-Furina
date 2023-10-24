@@ -882,7 +882,6 @@ table tr:nth-child(odd) {
 }
 
 .constel{
-    grid-column: span 3/span 3;
     margin-bottom: 1rem;
 }
 
@@ -947,6 +946,31 @@ table tr:nth-child(odd) {
 
 .hydroS{
     color: #80C0FF;
+    font-weight: 700;
+}
+
+.dendroS{
+    color: #99FF88;
+    font-weight: 700;
+}
+
+.pyroS{
+    color: #FF9999;
+    font-weight: 700;
+}
+
+.electroS{
+    color: #ffacff;
+    font-weight: 700;
+}
+
+.geoS{
+    color: #FFE699;
+    font-weight: 700;
+}
+
+.cryoS{
+    color: #99FFFF;
     font-weight: 700;
 }
 

@@ -342,15 +342,15 @@
                   <div>114</div>
                </a>
                <a href="p/material.php?id=318" class="ascRsItem center">
-                  <div class="c2"><img src="img/material/Nectar de Fleur mensongère.png" alt="rs"></div>
+                  <div class="c1"><img src="img/material/Nectar de Fleur mensongère.png" alt="rs"></div>
                   <div>36</div>
                </a>
                <a href="p/material.php?id=319" class="ascRsItem center">
-                  <div class="c3"><img src="img/material/Nectar miroitant.png" alt="rs"></div>
+                  <div class="c2"><img src="img/material/Nectar miroitant.png" alt="rs"></div>
                   <div>96</div>
                </a>
                <a href="p/material.php?id=320" class="ascRsItem center">
-                  <div class="c4"><img src="img/material/Nectar élémentaire.png" alt="rs"></div>
+                  <div class="c3"><img src="img/material/Nectar élémentaire.png" alt="rs"></div>
                   <div>129</div>
                </a>
                <a href="p/material.php?id=318" class="ascRsItem center"> <!--À modifié-->

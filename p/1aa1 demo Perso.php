@@ -9,7 +9,7 @@
    $bddFood = $food->fetch(PDO::FETCH_ASSOC);
    include_once '../inc/header.inc.php';
 ?>
-<img src="img/wish/.png" alt="background" class="image-background"> <!--Background-->
+<img src="img/wish/<?php echo $bddResults['name']; ?>.png" alt="background" class="image-background"> <!--Background-->
 
 <main>
    <div class="filter" id="filter">
@@ -20,7 +20,7 @@
       <div class="filterContent poppinsLight maxHeightStat">
          <h2 class="statT">Statistiques</h2>
          <table class="tbH tabStat"> <!--Tous les stats-->
-            <tr><td>LVL</td><td>PV de base</td><td>ATQ de base</td><td>DÉF de base</td><td>Taux CRIT</td></tr>
+            <tr><td>LVL</td><td>PV de base</td><td>ATQ de base</td><td>DÉF de base</td><td><!--Stat spécial--></td></tr>
             <tr>  <td>1</td>                <td></td>   <td></td>   <td></td>   <td></td>   </tr>
             <tr>  <td>5</td>                <td></td>   <td></td>   <td></td>   <td></td>   </tr>
             <tr>  <td>10</td>               <td></td>   <td></td>   <td></td>   <td></td>   </tr>
@@ -159,13 +159,13 @@
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>
 
-                  <span class="spanImp"></span>
+                  <span class="spanImp">Attaque normale</span>
                   <p></p> <!--Attaque #1-->
                   <br>
-                  <span class="spanImp"></span>
+                  <span class="spanImp">Attaque chargée</span>
                   <p></p> <!--Attaque #2-->
                   <br>
-                  <span class="spanImp"></span>
+                  <span class="spanImp">Attaque plongeante</span>
                   <p></p> <!--Attaque #3-->
                   <br>
                   <span class="spanImp"></span>
@@ -183,13 +183,13 @@
             </div>
             <div class="aptitude">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_apt2"> <!--image icon #2-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>A2.png" alt="icon_apt2"> <!--image icon #2-->
                   <p></p> <!--Aptitude #2-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>
 
-                  <p></span></p> <!--Descriptoin-->
+                  <p></p> <!--Description-->
                   <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
                   <div class="whitneyBold nessMat flex">
                      <div class="flex align cost">
@@ -199,16 +199,16 @@
                      </div>
                   </div>
                </div>
-            </div>aptitude
+            </div>
             <div class="aptitude">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_apt3"> <!--image icon #3-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>A3.png" alt="icon_apt3"> <!--image icon #3-->
                   <p></p> <!--Aptitude #3-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>
 
-                  <p></p> <!--Descriptoin-->
+                  <p></p> <!--Description-->
                   <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
                   <div class="whitneyBold nessMat flex">
                      <div class="flex align cost">
@@ -222,21 +222,21 @@
             <h2>Passive</h2><br>
             <div class="passif">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_pas1"> <!--image icon #4-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>A4.png" alt="icon_pas1"> <!--image icon #4-->
                   <p></p> <!--Passif #1-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div> <!--Description-->
             </div>
             <div class="passif">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_pas2"> <!--image icon #5-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>A5.png" alt="icon_pas2"> <!--image icon #5-->
                   <p></p> <!--Passif #2-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
             </div>
             <div class="passif">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_pas3">  <!--image icon #6-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>A6.png" alt="icon_pas3">  <!--image icon #6-->
                   <p></p> <!--Passif #3-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
@@ -248,42 +248,42 @@
          <div class="gridConstellation">
             <div class="constel">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_cons1">  <!--image constellation #1-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>C1.png" alt="icon_cons1">  <!--image constellation #1-->
                   <p></p> <!--Constellation #1-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_cons2">  <!--image constellation #2-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>C2.png" alt="icon_cons2">  <!--image constellation #2-->
                   <p></p> <!--Constellation #2-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
             </div>         
             <div class="constel">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_cons3">  <!--image constellation #3-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>C3.png" alt="icon_cons3">  <!--image constellation #3-->
                   <p></p> <!--Constellation #3-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_cons4">  <!--image constellation #4-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>C4.png" alt="icon_cons4">  <!--image constellation #4-->
                   <p></p> <!--Constellation #4-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_cons5">  <!--image constellation #5-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>C5.png" alt="icon_cons5">  <!--image constellation #5-->
                   <p></p> <!--Constellation #5-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
-                  <img src="img/apt/.png" alt="icon_cons6">  <!--image constellation #6-->
+                  <img src="img/apt/<?php echo $bddResults['name']; ?>C6.png" alt="icon_cons6">  <!--image constellation #6-->
                   <p></p> <!--Constellation #6-->
                </div>
                <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
@@ -301,12 +301,12 @@
                   <div class="c1"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
                   <div>168</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c2"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=164" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c2"><img src="img/material/Astuces du voyageur.png" alt="rs"></div>  <!--Ressource-->
                   <div>2</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c4"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=166" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c4"><img src="img/material/Leçons du héros.png" alt="rs"></div>  <!--Ressource-->
                   <div>418</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
@@ -325,8 +325,8 @@
                   <div class="c5"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
                   <div>6</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c5"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=221" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c5"><img src="img/material/Couronne de la sagesse.png" alt="rs"></div>  <!--Ressource-->
                   <div>3</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
@@ -342,15 +342,15 @@
                   <div>114</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c2"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+                  <div class="c1"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
                   <div>36</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c3"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+                  <div class="c2"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
                   <div>96</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c4"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+                  <div class="c3"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
                   <div>129</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
@@ -370,7 +370,7 @@
                <h2>Carte de visite</h2>
                <div class="other namecardOther">
                   <div>
-                     <img src="img/namecard/.png" alt="namecard">  <!--Namecard-->
+                     <img src="img/namecard/<?php echo $bddResults['name']; ?>2.png" alt="namecard">  <!--Namecard-->
                      <div class="nmTitle"></div>  <!--Titre-->
                      <div class="nmDesc"></div>  <!--Description-->
                   </div>
@@ -399,19 +399,19 @@
                <h2>Tenue</h2>
                <div class="other otherOutfit"> <!--À garder s'il y a plusieurs tenue-->
                   <div class="iconsP">
-                     <img src="img/perso/.png" alt="icon_perso" class="c5 pointer iconPerso active"> <!--Icon Personnage-->
-                     <img src="img/perso/.png" alt="icon_perso" class="c5 pointer iconPerso"> <!--Icon Personnage-->
+                     <img src="img/perso/<?php echo $bddResults['name']; ?>.png" alt="icon_perso" class="c5 pointer iconPerso active"> <!--Icon Personnage-->
+                     <img src="img/perso/<?php echo $bddResults['name']; ?>2.png" alt="icon_perso" class="c5 pointer iconPerso"> <!--Icon Personnage-->
                   </div>
                   <div class="poppinsLight">
                      <div class="descTenue">
                      <p><strong></strong></p> <!--Titre-->
                      <p></p> <!--Description-->
-                     <img src="img/wish/.png" alt="wish"> <!--Tenue image-->
+                     <img src="img/wish/<?php echo $bddResults['name']; ?>.png" alt="wish"> <!--Tenue image-->
                   </div>
                   <div class="descTenue hidden">
                      <p><strong></strong></p> <!--Titre-->
                      <p></p> <!--Description-->
-                     <img src="img/wish/.png" alt="wish"> <!--Tenue image-->
+                     <img src="img/wish/<?php echo $bddResults['name']; ?>2.png" alt="wish"> <!--Tenue image-->
                   </div>
                </div>
             </div>
@@ -421,7 +421,7 @@
    
    <style>
       .ascension{ /*Ascension background*/
-         background-image: url("img/wish/.png");
+         background-image: url("img/wish/<?php echo $bddResults['name']; ?>.png");
          background-position: -58rem -10rem;
       }
    </style>
