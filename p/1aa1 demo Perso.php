@@ -354,12 +354,12 @@
                   <div>129</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c5"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
-                  <div>18</div>
-               </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
                   <div class="c4"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
                   <div>46</div>  <!--Ressource-->
+               </a>
+               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c5"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+                  <div>18</div>
                </a>
             </div>
          </div>
@@ -370,7 +370,7 @@
                <h2>Carte de visite</h2>
                <div class="other namecardOther">
                   <div>
-                     <img src="img/namecard/<?php echo $bddResults['name']; ?>2.png" alt="namecard">  <!--Namecard-->
+                     <img src="img/namecard/2.png" alt="namecard">  <!--Namecard-->
                      <div class="nmTitle"></div>  <!--Titre-->
                      <div class="nmDesc"></div>  <!--Description-->
                   </div>

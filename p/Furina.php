@@ -353,13 +353,13 @@
                   <div class="c3"><img src="img/material/Nectar élémentaire.png" alt="rs"></div>
                   <div>129</div>
                </a>
-               <a href="p/material.php?id=318" class="ascRsItem center"> <!--À modifié-->
-                  <div class="c5"><img src="img/material/Nectar de Fleur mensongère.png" alt="rs"></div> <!--À modifié-->
-                  <div>18</div>
-               </a>
                <a href="p/material.php?id=428" class="ascRsItem center">
                   <div class="c4"><img src="img/material/Eau n'ayant pas transcendé.png" alt="rs"></div>
                   <div>46</div>
+               </a>
+               <a href="p/material.php?id=318" class="ascRsItem center"> <!--À modifié-->
+                  <div class="c5"><img src="img/material/Nectar de Fleur mensongère.png" alt="rs"></div> <!--À modifié-->
+                  <div>18</div>
                </a>
             </div>
          </div>

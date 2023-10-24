@@ -350,13 +350,13 @@
                   <div class="c3"><img src="img/material/Essence de Blob.png" alt="rs"></div>  <!--Ressource-->
                   <div>129</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=387" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c5"><img src="img/material/Corne de Monoceros Caeli.png" alt="rs"></div>  <!--Ressource-->
-                  <div>18</div>
-               </a>
                <a href="p/material.php?id=383" class="ascRsItem center">  <!--Ressource-->
                   <div class="c4"><img src="img/material/Pilier de basalte.png" alt="rs"></div>  <!--Ressource-->
                   <div>46</div>  <!--Ressource-->
+               </a>
+               <a href="p/material.php?id=387" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c5"><img src="img/material/Corne de Monoceros Caeli.png" alt="rs"></div>  <!--Ressource-->
+                  <div>18</div>
                </a>
             </div>
          </div>
@@ -367,7 +367,7 @@
                <h2>Carte de visite</h2>
                <div class="other namecardOther">
                   <div>
-                     <img src="img/namecard/<?php echo $bddResults['name']; ?>2.png" alt="namecard">  <!--Namecard-->
+                     <img src="img/namecard/Zhongli - Chute de météore2.png" alt="namecard">  <!--Namecard-->
                      <div class="nmTitle">Zhongli - Chute de météore</div>  <!--Titre-->
                      <div class="nmDesc">Les étoiles chutent, la lumière faiblit.</div>  <!--Description-->
                   </div>

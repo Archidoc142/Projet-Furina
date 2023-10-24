@@ -350,13 +350,13 @@
                   <div class="c3"><img src="img/material/Poussière cristalline de sporange.png" alt="rs"></div>  <!--Ressource-->
                   <div>129</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=415" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c5"><img src="img/material/Fils de marionnette.png" alt="rs"></div>  <!--Ressource-->
-                  <div>18</div>
-               </a>
                <a href="p/material.php?id=414" class="ascRsItem center">  <!--Ressource-->
                   <div class="c4"><img src="img/material/Liane d'oblitération.png" alt="rs"></div>  <!--Ressource-->
                   <div>46</div>  <!--Ressource-->
+               </a>
+               <a href="p/material.php?id=415" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c5"><img src="img/material/Fils de marionnette.png" alt="rs"></div>  <!--Ressource-->
+                  <div>18</div>
                </a>
             </div>
          </div>
@@ -367,7 +367,7 @@
                <h2>Carte de visite</h2>
                <div class="other namecardOther">
                   <div>
-                     <img src="img/namecard/<?php echo $bddResults['name']; ?>2.png" alt="namecard">  <!--Namecard-->
+                     <img src="img/namecard/Nahida - Croissant2.png" alt="namecard">  <!--Namecard-->
                      <div class="nmTitle">Nahida - Croissant</div>  <!--Titre-->
                      <div class="nmDesc">La lune montante admire le soleil, car sa lumière illumine le monde, tandis que le soleil couchant envie la lune, car elle est toujours accompagnée par les plus beaux des rêves.</div>  <!--Description-->
                   </div>
