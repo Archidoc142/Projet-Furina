@@ -1,7 +1,7 @@
 <?php
 require_once 'classe/PDOFactory.php';
 $bdd = PDOFactory::getMySQLConnection();
-$bddResults = $bdd->query("SELECT * FROM arme ORDER BY type_id, rarity;");
+$bddResults = $bdd->query("SELECT * FROM arme ORDER BY type_id, rarity, id;");
 include_once 'inc/header.inc.php';
 ?>
 

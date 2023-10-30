@@ -154,7 +154,7 @@
             <div class="aptitude">
                <div class="align flex titleApt">
                   <img src="img/apt/sword.png" alt="icon_apt1">  <!--image icon #2-->
-                  <p>Attaque normale : Épée de radiance</p> <!--Aptitude #1-->
+                  <p>Épée de radiance</p> <!--Aptitude #1-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>
@@ -416,7 +416,7 @@
    <style>
       .ascension{ /*Ascension background*/
          background-image: url("img/wish/<?php echo $bddResults['name']; ?>.png");
-         background-position: -58rem -10rem;
+         background-position: -53rem -12rem;
       }
    </style>
 <script defer src="js/scriptPerso.js"></script>

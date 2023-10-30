@@ -15,7 +15,7 @@
             <div class="flex mainInfo c<?php echo $bddResults['rarity']; ?>">
                <div class="statPageObject">
                   <div class="typeObject flex align">
-                     <p>Nourriture</p>
+                     <p class="fdName">Nourriture</p>
                      <img src="img/icon/<?php echo $bddResults['type'];?>.png" alt="food_type">
                   </div>
                   <div class="flex starContainerP">

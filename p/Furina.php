@@ -154,7 +154,7 @@
             <div class="aptitude">
                <div class="align flex titleApt">
                   <img src="img/apt/sword.png" alt="icon_apt1">
-                  <p>Attaque normale : Sollicitation de la soliste</p> <!--Aptitude #1-->
+                  <p>Sollicitation de la soliste</p> <!--Aptitude #1-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>

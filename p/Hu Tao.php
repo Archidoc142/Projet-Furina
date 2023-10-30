@@ -154,7 +154,7 @@
             <div class="aptitude">
                <div class="align flex titleApt">
                   <img src="img/apt/polearm.png" alt="icon_apt1">  <!--image icon #2-->
-                  <p>Attaque normale : Lance secrète de Wangsheng</p> <!--Aptitude #1-->
+                  <p>Lance secrète de Wangsheng</p> <!--Aptitude #1-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>

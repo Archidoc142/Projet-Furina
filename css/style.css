@@ -959,6 +959,11 @@ table tr:nth-child(odd) {
     font-weight: 700;
 }
 
+.anemoS{
+    color: #80FFD7;
+    font-weight: 700;
+}
+
 .electroS{
     color: #ffacff;
     font-weight: 700;
@@ -1105,4 +1110,8 @@ table tr:nth-child(odd) {
 .nmv2W{
     width: 516.67px;
     border-radius: 1rem 1rem 0 0;
+}
+
+.fdName{
+    margin-right: 6px;
 }
