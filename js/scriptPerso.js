@@ -66,3 +66,41 @@ range.addEventListener("input", () => {
         }
     }
 });
+
+const histoire = document.querySelector(".allHi");
+const dialogue = document.querySelector(".allDi");
+const btnHis = document.querySelectorAll(".hisQ");
+
+btnHis[0].addEventListener('click', () => {
+    histoire.classList.remove('hidden');
+    dialogue.classList.add('hidden');
+});
+
+btnHis[1].addEventListener('click', () => {
+    dialogue.classList.remove('hidden');
+    histoire.classList.add('hidden');
+});
+
+const pistes = document.querySelectorAll(".audio");
+
+pistes.forEach(piste => {
+    let isPlaying = false;
+
+    piste.addEventListener('click', () => {
+        if (!isPlaying && piste.textContent.includes('EN')) {
+            piste.innerHTML = '<p>⏸</p>';
+
+            const path = piste.getAttribute('data-piste');
+            const audio = new Audio();
+            audio.src = path;
+
+            audio.addEventListener('ended', () => {
+                isPlaying = false;
+                piste.innerHTML = '<p>EN</p>';
+            });
+
+            audio.play();
+            isPlaying = true;
+        }
+    });
+});

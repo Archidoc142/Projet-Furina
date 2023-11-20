@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 24 oct. 2023 à 22:13
+-- Généré le : sam. 11 nov. 2023 à 17:43
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -26,6 +26,11 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `arme`
 --
+
+CREATE DATABASE dbgenshin;
+
+USE dbgenshin;
+
 
 CREATE TABLE `arme` (
   `name` varchar(40) NOT NULL,
@@ -1262,7 +1267,10 @@ INSERT INTO `material` (`id`, `name`, `type`, `description`, `rarity`, `source`)
 (499, 'Détecteur de trésors Dendro', 'Gadget', 'Outil permettant de détecter les coffres proches à Sumeru.\r\nPour certaines personnes, la vie est faite pour l\'exploration et les découvertes. Des coffres pleins à craquer les attendent à chacune de leurs destinations.', 4, 'Synthèse'),
 (500, 'Détecteur de trésors Hydro', 'Gadget', 'Outil permettant de détecter les coffres proches à Fontaine.\r\nCes coffres dispersés ne sont la propriété légale d\'aucun individu ou organisation. Dans la plupart des cas, il est légal de revendiquer le contenu qui s\'y trouve.', 4, 'Synthèse'),
 (501, 'Résine condensée', 'Consommable', 'Vous pouvez en détenir jusqu\'à 5 simultanément.\r\nRésine contenant une importante quantité d\'énergie, pouvant être utilisée à la place de la Résine originelle pour activer les Fleurs des lignes énergétiques et les Arbres pétrifiés afin d\'obtenir d\'importantes récompenses.\r\nLes anciens arbres argentés, au contact des lignes énergétiques, libèrent l\'énergie contenue dans leur résine, qui vient ensuite circuler à travers les canaux énergétiques, raffinant les matières qui y reposent et produisant parfois ce type de matière.', 4, 'Synthèse'),
-(502, 'Sérénithéière', 'Gadget', 'Une théière offerte par Madame Ping qui semble servir de porte d\'entrée vers un autre monde...', 5, '');
+(502, 'Sérénithéière', 'Gadget', 'Une théière offerte par Madame Ping qui semble servir de porte d\'entrée vers un autre monde...', 5, ''),
+(503, 'Ficelle de soie sans lumière', 'Matériau d\'amélioration de personnage', 'Un fil mince qui a fini par s\'enrouler autour de votre arme alors que vous combattiez le Narval stellavore.\r\nDans l\'ancienne Fontaine, certains pensaient que Fortuna, qui dirigeait le monde, était tissée à partir d\'innombrables fibres, comme les cordes d\'une harpe. Des cordes qui résonnent avec de la musique majestueuse apporteraient le bonheur à tous, tandis que tout bruit de discorde détruirait la structure de l\'univers.', 5, 'Défi de Narval stellavore (Niv.70+)'),
+(504, 'Œil de tourbillon sans lumière', 'Matériau d\'amélioration de personnage', 'Une étrange substance obtenue en combattant le Narval stellavore. Sa qualité réelle dépasse de loin ce à quoi on pourrait s\'attendre compte tenu de sa taille.\r\nTout gravite autour des objets lourds... L\'or attire plus que le fer, et le sol plus que la brise qui souffle au-dessus. Tout comme la lumière ne peut s\'échapper du vortex des ténèbres, la cause et l\'effet sont liés au destin, peut-être même de manière irréversible.', 5, 'Défi de Narval stellavore (Niv.70+)'),
+(505, 'Masse sans lumière', 'Matériau d\'amélioration de personnage', 'Un fragment produit lors de l\'intense bataille contre le Narval stellavore.\r\nL\'univers est un endroit sombre et froid.\r\nMais regardez attentivement... À l\'intérieur se trouvent toujours de faibles éclats de lumière, comme des perles qui brillent dans le sable blanc, des diamants qui s\'éparpillent dans l\'azur infini, des lumières qui traversent le brouillard nocturne ou des étincelles qui crépitent dans les flammes ardentes.', 5, 'Défi de Narval stellavore (Niv.70+)');
 
 -- --------------------------------------------------------
 
@@ -1675,8 +1683,8 @@ INSERT INTO `namecard` (`id`, `name`, `description`, `source`, `type`) VALUES
 (172, 'Célébration - Euphonie', 'La pluie passe et les arbres de la montagne chantent.', 'Événement « GENSHIN CONCERT »', 6),
 (173, 'Succès - Perpétuité', '« Personne n\'entend le rêve qui s\'est brisé entre les conques et les engrenages. Seul l\'infatigable danseur mécanique interroge encore les échos des jours et des nuits passés à chaque pas élégant.»', 'Obtention de tous les succès de « Au défi ! - Partie VIII »', 4),
 (174, 'Fontaine - Expiation', 'Le logo officiel de la Forteresse de Méropide. C\'est notre espoir le plus cher que tous ceux qui souhaitent honorer l\'ordre et vivre leur vie en paix ne soient jamais associés à l\'organisation que représente cet insigne.', 'Obtention de tous les succès de « Fontaine - Danse de la rosée blanche (2) »', 4),
-(175, 'Furina', '', '', 3),
-(176, 'Charlotte', NULL, NULL, 3),
+(175, 'Furina - Banquet', 'Une seule personne peut-elle manger tous les gâteaux ? Si elle en mange un par jour, elle devrait pouvoir profiter de gâteaux pendant environ une semaine, n\'est-ce pas ? Mais les gâteaux resteront-ils frais aussi longtemps? Hmm... Eh bien, ce n\'est pas grave, des amis viendront manger les gâteaux ensemble.', 'Niveau d\'affinité 10 avec Furina', 3),
+(176, 'Charlotte - Scoop', '« Premièrement, j\'ai écrit un scoop et ça va sûrement faire beaucoup de bruit ! Deuxièmement, le journal a dit que la situation évoluait et ils ont décidé de publier un communiqué de presse... Troisièmement, la personne qui rédige le communiqué sera demain sur le banc des accusés de l\'Opéra Épiclèse, alors ils ont décidé de revenir à mon article ! »', 'Niveau d\'affinité 10 avec Charlotte', 3),
 (177, 'Fontaine - Exhaustivité', '« Les nuages du soir se dispersent dans le ciel et le ruisseau brille d\'or sous le soleil couchant. Mon ombre erre seule, semblable à une apparition solitaire au pied d\'une cascade. »', 'Obtention de tous les succès de « Fontaine - Danse de la rosée blanche (3) »', 4),
 (178, 'PB - Valse tournoyante', 'Même si les mécanismes horlogoïdes s\'arrêtent de tourner, même si les marionnettes cessent d\'avancer... Même si nos souvenirs restent éternellement figés comme du corail... N\'oublions pas nos aventures et le temps que nous avons passé ensemble.', 'Récompense de Pass de bataille', 2);
 
@@ -1724,53 +1732,56 @@ INSERT INTO `personnage` (`id`, `name`, `rarity`, `element`, `type_id`) VALUES
 (22, 'Jean', 5, 'Anémo', 0),
 (23, 'Diona', 4, 'Cryo', 3),
 (24, 'Tartaglia', 5, 'Hydro', 3),
-(25, 'Zhongli', 5, 'Géo', 2),
-(26, 'Albedo', 5, 'Géo', 0),
-(27, 'Ganyu', 5, 'Cryo', 3),
-(28, 'Xiao', 5, 'Anémo', 2),
-(29, 'Hu Tao', 5, 'Pyro', 2),
-(30, 'Rosalia', 4, 'Cryo', 2),
-(31, 'Yanfei', 4, 'Pyro', 4),
-(32, 'Kaedehara Kazuha', 5, 'Anémo', 0),
-(33, 'Kamisato Ayaka', 5, 'Cryo', 0),
-(34, 'Sayu', 4, 'Anémo', 1),
-(35, 'Yoimiya', 5, 'Pyro', 3),
-(36, 'Kujou Sara', 4, 'Électro', 3),
-(37, 'Raiden Shogun', 5, 'Électro', 2),
-(38, 'Sangonomiya Kokomi', 5, 'Hydro', 4),
-(39, 'Arataki Itto', 5, 'Géo', 1),
-(40, 'Gorou', 4, 'Géo', 3),
-(41, 'Yun Jin', 4, 'Géo', 2),
-(42, 'Shenhe', 5, 'Cryo', 2),
-(43, 'Yae Miko', 5, 'Électro', 4),
-(44, 'Kamisato Ayato', 5, 'Hydro', 0),
-(45, 'Yelan', 5, 'Hydro', 3),
-(46, 'Kuki Shinobu', 4, 'Électro', 1),
-(47, 'Heizou', 4, 'Anémo', 4),
-(48, 'Tighnari', 5, 'Dendro', 3),
-(49, 'Collei', 4, 'Dendro', 3),
-(50, 'Dori', 4, 'Électro', 1),
-(51, 'Candace', 4, 'Hydro', 2),
-(52, 'Cyno', 5, 'Électro', 2),
-(53, 'Nilou', 4, 'Hydro', 0),
-(54, 'Nahida', 5, 'Dendro', 4),
-(55, 'Layla', 4, 'Cryo', 0),
-(56, 'Faruzan', 4, 'Anémo', 3),
-(57, 'Nomade', 5, 'Anémo', 4),
-(58, 'Alhaitham', 5, 'Dendro', 0),
-(59, 'Yaoyao', 4, 'Dendro', 2),
-(60, 'Dehya', 5, 'Pyro', 1),
-(61, 'Mika', 4, 'Cryo', 2),
-(62, 'Baizhu', 5, 'Dendro', 4),
-(63, 'Kaveh', 4, 'Dendro', 1),
-(64, 'Kirara', 4, 'Dendro', 0),
-(65, 'Lyney', 5, 'Pyro', 3),
-(66, 'Lynette', 4, 'Anémo', 0),
-(67, 'Fréminet', 4, 'Cryo', 1),
-(68, 'Neuvillette', 5, 'Hydro', 4),
-(69, 'Wriothesley', 5, 'Cryo', 4),
-(70, 'Charlotte', 4, 'Cryo', 4),
-(71, 'Furina', 5, 'Hydro', 0);
+(25, 'Xinyan', 4, 'Pyro', 1),
+(26, 'Zhongli', 5, 'Géo', 2),
+(27, 'Albedo', 5, 'Géo', 0),
+(28, 'Ganyu', 5, 'Cryo', 3),
+(29, 'Xiao', 5, 'Anémo', 2),
+(30, 'Hu Tao', 5, 'Pyro', 2),
+(31, 'Rosalia', 4, 'Cryo', 2),
+(32, 'Yanfei', 4, 'Pyro', 4),
+(33, 'Kaedehara Kazuha', 5, 'Anémo', 0),
+(34, 'Kamisato Ayaka', 5, 'Cryo', 0),
+(35, 'Sayu', 4, 'Anémo', 1),
+(36, 'Yoimiya', 5, 'Pyro', 3),
+(37, 'Kujou Sara', 4, 'Électro', 3),
+(38, 'Raiden Shogun', 5, 'Électro', 2),
+(39, 'Sangonomiya Kokomi', 5, 'Hydro', 4),
+(40, 'Arataki Itto', 5, 'Géo', 1),
+(41, 'Gorou', 4, 'Géo', 3),
+(42, 'Yun Jin', 4, 'Géo', 2),
+(43, 'Shenhe', 5, 'Cryo', 2),
+(44, 'Yae Miko', 5, 'Électro', 4),
+(45, 'Kamisato Ayato', 5, 'Hydro', 0),
+(46, 'Yelan', 5, 'Hydro', 3),
+(47, 'Kuki Shinobu', 4, 'Électro', 1),
+(48, 'Heizou', 4, 'Anémo', 4),
+(49, 'Tighnari', 5, 'Dendro', 3),
+(50, 'Collei', 4, 'Dendro', 3),
+(51, 'Dori', 4, 'Électro', 1),
+(52, 'Candace', 4, 'Hydro', 2),
+(53, 'Cyno', 5, 'Électro', 2),
+(54, 'Nilou', 4, 'Hydro', 0),
+(55, 'Nahida', 5, 'Dendro', 4),
+(56, 'Layla', 4, 'Cryo', 0),
+(57, 'Faruzan', 4, 'Anémo', 3),
+(58, 'Nomade', 5, 'Anémo', 4),
+(59, 'Alhaitham', 5, 'Dendro', 0),
+(60, 'Yaoyao', 4, 'Dendro', 2),
+(61, 'Dehya', 5, 'Pyro', 1),
+(62, 'Mika', 4, 'Cryo', 2),
+(63, 'Baizhu', 5, 'Dendro', 4),
+(64, 'Kaveh', 4, 'Dendro', 1),
+(65, 'Kirara', 4, 'Dendro', 0),
+(66, 'Lyney', 5, 'Pyro', 3),
+(67, 'Lynette', 4, 'Anémo', 0),
+(68, 'Fréminet', 4, 'Cryo', 1),
+(69, 'Neuvillette', 5, 'Hydro', 4),
+(70, 'Wriothesley', 5, 'Cryo', 4),
+(71, 'Charlotte', 4, 'Cryo', 4),
+(72, 'Furina', 5, 'Hydro', 0),
+(73, 'Chevreuse', 4, 'Pyro', 2),
+(74, 'Navia', 5, 'Géo', 1);
 
 --
 -- Index pour les tables déchargées
@@ -1826,7 +1837,7 @@ ALTER TABLE `personnage`
 -- AUTO_INCREMENT pour la table `arme`
 --
 ALTER TABLE `arme`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=182;
 
 --
 -- AUTO_INCREMENT pour la table `artefact`
@@ -1838,13 +1849,13 @@ ALTER TABLE `artefact`
 -- AUTO_INCREMENT pour la table `food`
 --
 ALTER TABLE `food`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=261;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=262;
 
 --
 -- AUTO_INCREMENT pour la table `material`
 --
 ALTER TABLE `material`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=503;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=506;
 
 --
 -- AUTO_INCREMENT pour la table `monstre`
@@ -1862,17 +1873,6 @@ ALTER TABLE `namecard`
 -- Contraintes pour les tables déchargées
 --
 
---
--- Contraintes pour la table `arme`
---
-ALTER TABLE `arme`
-  ADD CONSTRAINT `FK_PersonOrder` FOREIGN KEY (`type_id`) REFERENCES `type` (`type_id`);
-
---
--- Contraintes pour la table `personnage`
---
-ALTER TABLE `personnage`
-  ADD CONSTRAINT `fk_type_id` FOREIGN KEY (`type_id`) REFERENCES `type` (`type_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

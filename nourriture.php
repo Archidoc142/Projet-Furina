@@ -79,7 +79,7 @@ include_once 'inc/header.inc.php';
          <?php
             $j = 1;
             foreach ($bddResults as $row) {
-               echo "<a href='p/food.php?id=" . $row['id'] . "' class='objectList-item' data-nom='" . $row['name'] . "' data-rarity='" . $row['rarity'] . "' data-arme='" . $row['type_id'] . "' style='order:" . $j . "'>";
+               echo "<a href='p/food?id=" . $row['id'] . "' class='objectList-item' data-nom='" . $row['name'] . "' data-rarity='" . $row['rarity'] . "' data-arme='" . $row['type_id'] . "' style='order:" . $j . "'>";
                echo "<div class='objectList-container'>";
                      echo "<img src='img/nourriture/" . rawurlencode($row['name']) . ".png' alt='" . $row['name'] . "' class='objectList-avatar " . 'c' . $row['rarity'] . "'>";
                      echo "<img src='img/icon/" . $row['type'] . ".png' alt='" . $row['type'] . "' class='objectList-element'>";

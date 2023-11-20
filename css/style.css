@@ -872,7 +872,7 @@ table tr:nth-child(odd) {
     z-index: -1;
 }
 
-.talent, .constellation, .ascension, .autre{
+.talent, .constellation, .ascension, .autre, .histoire{
     grid-column: 3 / span 6;
 }
 
@@ -1114,4 +1114,66 @@ table tr:nth-child(odd) {
 
 .fdName{
     margin-right: 6px;
+}
+
+.containerHis{
+    background-color: #473e67;
+    color: white;
+    font-family: poppinsLight;
+    font-size: 18px;
+    border-radius: 1rem;
+    padding: 16px;
+    border: 2px solid rgba(93,81,135);
+    margin: 0 0 28px 16px;
+}
+
+.hisQ{
+    width: 90px;
+    margin: 0 8px 0 0;
+    font-family: whitneyBold;
+    background-color: rgb(192, 190, 188);
+}
+
+.marBB{
+    margin:  0 0 90px 0;
+}
+
+.allHi, .allDi{
+    margin-top: 8px;
+    padding: 0 16px;
+    max-height: 467px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tiPH{
+    font-size: 28px;
+    margin-bottom: 0.6rem;
+}
+
+.audio{
+    font-size: 14px;
+    padding: 4px;
+    margin-top: 8px;
+    border: 2px solid rgba(116,104,163);
+    border-radius: 999px;
+    width: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.error404{
+    font-family: whitneyBold;
+}
+
+.error404 h1{
+    font-size: 48px;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.error404 p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #bfb2b2;
 }

@@ -33,7 +33,7 @@ include_once 'inc/header.inc.php';
          <?php
             $j = 1;
             foreach ($bddResults as $row) {
-               echo "<a href='p/namecard.php?id=" . $row['id'] . "' class='objectList-item' data-nom='" . $row['name'] . "' data-type='" . $row['type'] . "' style='order:" . $j . "'>";
+               echo "<a href='p/namecard?id=" . $row['id'] . "' class='objectList-item' data-nom='" . $row['name'] . "' data-type='" . $row['type'] . "' style='order:" . $j . "'>";
                echo "<div class='objectList-container'>";
                      echo "<img src='img/namecard/" . rawurlencode($row['name']) . ".png' alt='" . $row['name'] . "' class='objectList-avatar c4'>";
                      echo "<div class='br-top10'></div>";

@@ -35,7 +35,7 @@ include_once 'inc/header.inc.php';
          <?php
             $j = 1;
             foreach ($bddResults as $row) {
-               echo "<a href='p/monstre/" . rawurlencode($row['name']) . ".php' class='objectList-item' data-nom='" . $row['name'] . "' data-type='" . $row['type'] . "' style='order:" . $j . "'>";
+               echo "<a href='p/monstre/" . rawurlencode($row['name']) . "' class='objectList-item' data-nom='" . $row['name'] . "' data-type='" . $row['type'] . "' style='order:" . $j . "'>";
                echo "<div class='objectList-container'>";
                      echo "<img src='img/npc/" . rawurlencode($row['name']) . ".png' alt='" . $row['name'] . "' class='objectList-avatar c1'>";
                      echo "<div class='br-top10'></div>";

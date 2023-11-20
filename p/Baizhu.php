@@ -154,22 +154,19 @@
             <div class="aptitude">
                <div class="align flex titleApt">
                   <img src="img/apt/catalyst.png" alt="icon_apt1">  <!--image icon #2-->
-                  <p></p> <!--Aptitude #1-->
+                  <p>Acupuncture dorée</p> <!--Aptitude #1-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>
 
                   <span class="spanImp">Attaque normale</span>
-                  <p></p> <!--Attaque #1-->
+                  <p>Enchaîne jusqu'à 4 attaques qui infligent des <span class="dendroS">DGT Dendro</span> vers l'avant.</p> <!--Attaque #1-->
                   <br>
                   <span class="spanImp">Attaque chargée</span>
-                  <p></p> <!--Attaque #2-->
+                  <p>Consomme de l'endurance pour infliger des <span class="dendroS">DGT Dendro</span> de zone vers l'avant après un court délai.</p> <!--Attaque #2-->
                   <br>
                   <span class="spanImp">Attaque plongeante</span>
-                  <p></p> <!--Attaque #3-->
-                  <br>
-                  <span class="spanImp"></span>
-                  <p></p> <!--Attaque #4-->
+                  <p>Plonge depuis les airs en concentrant ses pouvoirs Dendro, infligeant des DGT aux ennemis en chemin et des <span class="dendro">DGT Dendro de zone</span> à l'impact.</p> <!--Attaque #3-->
                   <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
 
                   <div class="whitneyBold nessMat flex">
@@ -184,12 +181,12 @@
             <div class="aptitude">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>A2.png" alt="icon_apt2"> <!--image icon #2-->
-                  <p></p> <!--Aptitude #2-->
+                  <p>Diagnostic universel</p> <!--Aptitude #2-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>
 
-                  <p></p> <!--Description-->
+                  <p>Contrôle un esprit de gaze qui se promène et attaque les ennemis proches, infligeant des <span class="dendroS">DGT Dendro</span>.<br>Après avoir effectué 3 attaques ou s'il n'y a pas d'ennemis à proximité, l'esprit revient et soigne tous les personnages de l'équipe à proximité selon les PV max de Baizhu.<br><br><span class="italic">Ceux qui, dans le domaine médical, peuvent distinguer les vrais signes de maladie des faux peuvent même guérir les gens avant que les symptômes ne se manifestent.</span></p> <!--Description-->
                   <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
                   <div class="whitneyBold nessMat flex">
                      <div class="flex align cost">
@@ -203,12 +200,12 @@
             <div class="aptitude">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>A3.png" alt="icon_apt3"> <!--image icon #3-->
-                  <p></p> <!--Aptitude #3-->
+                  <p>Reviviscence holistique</p> <!--Aptitude #3-->
                </div>
                <div class="InfoTalent poppinsLight">
                   <div class="labelInfo center whitneyBold">Informations sur les talents</div>
 
-                  <p></p> <!--Description-->
+                  <p>Entre dans l'état Ordonnance impulsive, créant un bouclier aseptique qui absorbe les <span class="dendroS">DGT Dendro</span> 250 % plus efficacement.<br>Pendant cet état, un nouveau bouclier aseptique est généré toutes les 2,5 s.<br><br>Dans les circonstances suivantes, le bouclier aseptique soigne votre personnage déployé selon les PV max de Baizhu et libère une veine d'aura pour attaquer les ennemis en infligeant des <span class="dendroS">DGT Dendro</span> :<br>· Lorsqu'un personnage est sous la protection d'un bouclier aseptique et qu'un nouveau bouclier aseptique est généré.<br>· Lorsque les effets du bouclier aseptique prennent fin ou lorsqu'il est détruit.<br><br><span class="italic">Si l'on peut percevoir les cieux et la terre, défendre sa sphère intérieure contre les influences extérieures et garder l'esprit clair, rien ne peut gêner.</span></p> <!--Description-->
                   <div class="labelInfo center whitneyBold marg-tt">Attributs de compétence</div>
                   <div class="whitneyBold nessMat flex">
                      <div class="flex align cost">
@@ -223,23 +220,23 @@
             <div class="passif">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>A4.png" alt="icon_pas1"> <!--image icon #4-->
-                  <p></p> <!--Passif #1-->
+                  <p>Cinq fortunes perpétuelles</p> <!--Passif #1-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div> <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Baizhu obtient différents effets selon les PV de votre personnage déployé :<br>· Si les PV de ce dernier sont inférieurs à 50 %, Baizhu obtient un bonus de soins de 20 %.<br>· Si les PV de ce dernier sont supérieurs ou égaux à 50 %, Baizhu bénéficie d'un <span class="dendroS">bonus de DGT Dendro</span> de 25 %.</p></div> <!--Description-->
             </div>
             <div class="passif">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>A5.png" alt="icon_pas2"> <!--image icon #5-->
-                  <p></p> <!--Passif #2-->
+                  <p>Terre mère</p> <!--Passif #2-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Les personnages soignés par un <span class="spanImp">bouclier aseptique</span> obtiennent l'effet Année de la chance boisée : pour chaque tranche de 1 000 PV max que Baizhu possède jusqu'à 50 000 PV, les DGT infligés par leurs réactions de Brûlure, de Fleurissement, d'Exubérance et de Bourgeonnement augmentent de 2 % et les augmentations de DGT accordées par leurs réactions de Suractivation et de Propagation augmentent de 0,8 %, pendant 6 s.</p></div>  <!--Description-->
             </div>
             <div class="passif">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>A6.png" alt="icon_pas3">  <!--image icon #6-->
-                  <p></p> <!--Passif #3-->
+                  <p>Bienfait herbacé</p> <!--Passif #3-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Lorsque Baizhu fait partie de l'équipe, interagir avec certains objets récoltables soigne votre personnage déployé pour une valeur équivalant à 2,5 % des PV max de Baizhu.</p></div>  <!--Description-->
             </div>
          </div>
       </div>
@@ -249,44 +246,44 @@
             <div class="constel">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>C1.png" alt="icon_cons1">  <!--image constellation #1-->
-                  <p></p> <!--Constellation #1-->
+                  <p>Regard attentif</p> <!--Constellation #1-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Confère une utilisation supplémentaire de <span class="spanImp">Diagnostic universel</span>.</p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>C2.png" alt="icon_cons2">  <!--image constellation #2-->
-                  <p></p> <!--Constellation #2-->
+                  <p>Discernement incisif</p> <!--Constellation #2-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Lorsque votre personnage déployé touche un ennemi proche avec une attaque, Baizhu libère un esprit divisé de gaze.<br>L'esprit divisé de gaze effectue 1 attaque avant de revenir, infligeant des <span class="dendroS">DGT Dendro</span> pour une valeur équivalant à 250 % de l'ATQ de Baizhu et soignant pour 20 % du soin de l'esprit de gaze de <span class="spanImp">Diagnostic universel</span>.<br>Les DGT infligés de cette manière sont considérés comme des DGT de compétence élémentaire.<br>Cet effet peut être déclenché une fois toutes les 5 s.</p></div>  <!--Description-->
             </div>         
             <div class="constel">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>C3.png" alt="icon_cons3">  <!--image constellation #3-->
-                  <p></p> <!--Constellation #3-->
+                  <p>Stabilisation complète</p> <!--Constellation #3-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Niveau d'aptitude <span class="spanImp">Reviviscence holistique +3</span>.<br>Niveau max : 15</p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>C4.png" alt="icon_cons4">  <!--image constellation #4-->
-                  <p></p> <!--Constellation #4-->
+                  <p>Perception ancienne</p> <!--Constellation #4-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>La maîtrise élémentaire de tous les personnages de l'équipe à proximité augmente de 80 pts pendant 15 s après l'utilisation de <span class="spanImp">Reviviscence holistique</span>.</p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>C5.png" alt="icon_cons5">  <!--image constellation #5-->
-                  <p></p> <!--Constellation #5-->
+                  <p>Fluctuations déroutantes</p> <!--Constellation #5-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Niveau d'aptitude <span class="spanImp">Diagnostic universel</span> +3.<br>Niveau max : 15</p></div>  <!--Description-->
             </div>
             <div class="constel">
                <div class="align flex titleApt">
                   <img src="img/apt/<?php echo $bddResults['name']; ?>C6.png" alt="icon_cons6">  <!--image constellation #6-->
-                  <p></p> <!--Constellation #6-->
+                  <p>Purification du qi</p> <!--Constellation #6-->
                </div>
-               <div class="InfoTalent poppinsLight"><p></p></div>  <!--Description-->
+               <div class="InfoTalent poppinsLight"><p>Les DGT infligés par la veine d'aura de <span class="spanImp">Reviviscence holistique</span> augmentent d'une valeur équivalant à 8 % des PV max de Baizhu.<br>De plus, lorsque l'<span class="spanImp">esprit de gaze</span> ou l'esprit divisé de gaze touche un ennemi, il y a 100 % de chances de créer un bouclier aseptique de <span class="spanImp">Reviviscence holistique</span>. Cet effet peut être déclenché une fois par <span class="spanImp">esprit de gaze</span> ou esprit divisé de gaze.</p></div>  <!--Description-->
             </div>
          </div>
       </div>
@@ -297,8 +294,8 @@
                   <div class="c3"><img src="img/material/mora.png" alt="rs"></div>
                   <div>7M</div>
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c1"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=41" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c1"><img src="img/material/Muguet bleu.png" alt="rs"></div>  <!--Ressource-->
                   <div>168</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=164" class="ascRsItem center">  <!--Ressource-->
@@ -309,56 +306,56 @@
                   <div class="c4"><img src="img/material/Leçons du héros.png" alt="rs"></div>  <!--Ressource-->
                   <div>418</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c2"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=182" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c2"><img src="img/material/Éclat d'émeraude nagadus.png" alt="rs"></div>  <!--Ressource-->
                   <div>1</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c3"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=183" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c3"><img src="img/material/Fragment d'émeraude nagadus.png" alt="rs"></div>  <!--Ressource-->
                   <div>9</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c4"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=184" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c4"><img src="img/material/Morceau d'émeraude nagadus.png" alt="rs"></div>  <!--Ressource-->
                   <div>9</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c5"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=185" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c5"><img src="img/material/Pierre d'émeraude nagadus.png" alt="rs"></div>  <!--Ressource-->
                   <div>6</div>  <!--Ressource-->
                </a>
                <a href="p/material.php?id=221" class="ascRsItem center">  <!--Ressource-->
                   <div class="c5"><img src="img/material/Couronne de la sagesse.png" alt="rs"></div>  <!--Ressource-->
                   <div>3</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c2"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=218" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c2"><img src="img/material/Enseignement de l'Or.png" alt="rs"></div>  <!--Ressource-->
                   <div>9</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c3"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=219" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c3"><img src="img/material/Guide de l'Or.png" alt="rs"></div>  <!--Ressource-->
                   <div>63</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c4"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=220" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c4"><img src="img/material/Philosophie de l'Or.png" alt="rs"></div>  <!--Ressource-->
                   <div>114</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c1"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=339" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c1"><img src="img/material/Spores de Fongus.png" alt="rs"></div>  <!--Ressource-->
                   <div>36</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c2"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=340" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c2"><img src="img/material/Pollen fluorescent.png" alt="rs"></div>  <!--Ressource-->
                   <div>96</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c3"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=341" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c3"><img src="img/material/Poussière cristalline de sporange.png" alt="rs"></div>  <!--Ressource-->
                   <div>129</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c4"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=419" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c4"><img src="img/material/Anneau de sombreur éternelle.png" alt="rs"></div>  <!--Ressource-->
                   <div>46</div>  <!--Ressource-->
                </a>
-               <a href="p/material.php?id=" class="ascRsItem center">  <!--Ressource-->
-                  <div class="c5"><img src="img/material/.png" alt="rs"></div>  <!--Ressource-->
+               <a href="p/material.php?id=420" class="ascRsItem center">  <!--Ressource-->
+                  <div class="c5"><img src="img/material/Fougère du monde luxuriant.png" alt="rs"></div>  <!--Ressource-->
                   <div>18</div>
                </a>
             </div>
